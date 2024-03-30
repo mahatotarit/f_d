@@ -1,0 +1,114 @@
+@import url("colors.css");
+
+*{
+    box-sizing:border-box;
+    padding:00px;
+    margin:00px;
+}
+.header_div{
+    background-color: var(--header_color);
+    height: 72px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    color: #c5d5e0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid transparent;
+}
+
+.header_logo{
+  display:flex;
+}
+.header_right_div{
+    display:flex;
+    align-items:center;
+    margin-left:auto;
+}
+
+.header_div .wallet_connect_modal_open_btn{
+    height: 40px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+    color: #9daab2;
+    font-weight: 500;
+    border: 1px solid #4d4f56;
+    border-radius: 32px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.header_div .wallet_connect_modal_open_btn:hover {
+  color: #e0f3ff;
+  border: 1px solid #e0f3ff;
+}
+
+.side_bar_box_open_th_line {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #4c4e57;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.side_bar_box_open_th_line:hover {
+    border: 1px solid #e0f3ff;
+}
+.side_bar_tree_l_parent_nav{
+    margin-left:20px;
+}
+
+.header_nav_bar{
+    height: 100%;
+    display: flex;
+    margin-left: 48px;
+}
+
+.header_nav_bar .header_nav_bar_ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.125rem;
+}
+
+.header_nav_bar .header_nav_bar_ul li{
+    position: relative;
+    margin: 0 24px 0 0;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    color: #c5d5e0;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.header_nav_bar .header_nav_bar_ul li a{
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+/* ============= side bar =============== */
+
+.aside{
+    height:500px;
+    width:100%;
+}
