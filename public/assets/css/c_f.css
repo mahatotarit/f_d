@@ -1,0 +1,11 @@
+:root{
+    --header_color: #2d2e33;
+    --aside_bar_bg:#2d2e33;
+    --side_top_bg:#6CF9D8;
+    --side_bar_line_hover:#44464c;
+    --header_links_color:#d3d3d3;
+}
+
+:root {
+    --header_links_font:Optima, sans-serif;
+}

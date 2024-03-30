@@ -1,4 +1,4 @@
-@import url("colors.css");
+@import url("c_f.css");
 
 *{
     box-sizing:border-box;
@@ -87,23 +87,34 @@
 
 .header_nav_bar .header_nav_bar_ul li{
     position: relative;
-    margin: 0 24px 0 0;
+    margin: 0 20px 0 0;
     font-size: 1rem;
     line-height: 1.25rem;
     font-weight: 400;
-    color: #c5d5e0;
     background-color: inherit;
     cursor: pointer;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .header_nav_bar .header_nav_bar_ul li a{
     text-decoration: none;
-    color: inherit;
+    color: var(--header_links_color);
     outline: none;
-    height: 100%;
     width: 100%;
     display: grid;
     place-items: center;
+
+    padding:7px 15px;
+    border-radius: 5px;
+    font-family: var(--header_links_font);
+    font-weight: 600;
+}
+.header_nav_bar .header_nav_bar_ul li a:hover{
+  background-color: var(--side_bar_line_hover);
+  color: white;
 }
 
 /* mobile screen nav bar hide */
@@ -167,6 +178,10 @@
 .side_bar_top_div{
     padding:10px;
 }
+.side_bar_top_div .wallet_address_div{
+   font-weight: bold;
+   letter-spacing: 0.3px;
+}
 .side_bar_top_div .aside_wallet_action_btn{
    padding:10px 20px;
    border-radius:10px;
@@ -184,13 +199,17 @@
   list-style:none;
 }
 .aside .bottom_aside_div ul li a{
-    color:white;
     text-decoration:none;
     display:block;
     width:100%;
     padding:10px;
     border-radius:5px;
+    
+    color:var(--header_links_color);
+    font-family: var(--header_links_font);
+    font-weight: 600;
 }
 .aside .bottom_aside_div ul li a:hover{
     background-color:var(--side_bar_line_hover);
+    color: white;
 }
