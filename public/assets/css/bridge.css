@@ -1,3 +1,10 @@
+@import url("c_f.css");
+
+
+body{
+    background-color:var(--body_bg);
+}
+
 .bridge_box_all_parent{
     background-color: transparent;
     width: 100%;
@@ -8,7 +15,10 @@
     padding: 0px 24px;
     max-width: 648px;
 }
-
+.bridge_box_all_parent *{
+    font-family: var(--bridge_box_font) !important;
+    color: white;
+}
 .bridge_box_second_parent{
     background-color: transparent;
     width: 100%;
@@ -107,7 +117,7 @@
     height: 64px;
     width: 100%;
     background: #2d2e33;
-    border: 1px solid #4c4e57;
+    border: 1px solid var(--white_black_border);
     border-radius: 32px;
     cursor: pointer;
 }
@@ -117,7 +127,7 @@
     align-items: center;
     padding: 9px 20px 9px 32px;
     background: #2d2e33;
-    border: 1px solid #4c4e57;
+    border: 1px solid var(--white_black_border);
     border-radius: 32px;
     width: 100%;
     height: 64px;
@@ -142,42 +152,31 @@
 
 .bridge_box_second_1_2_1_1_1_btn{
     font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
-    height: 64px;
-    padding: 0px 40px;
     gap: 4px;
-    border-radius: 32px;
     background-color: transparent;
-    border: none;
-    padding: 0;
-    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 0 10px;
     height: 24px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
-    border: 1px solid #4c4e57;
     border-radius: 24px;
     cursor: pointer;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #c5d5e0;
+    border-color:var(--white_black_border);
+}
+.bridge_box_second_1_2_1_1_1_btn:hover{
+    border-color:white;
 }
 
 .bridge_box_second_1_2_1_1_1_1_input{
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
-    color: #e0f3ff;
-    color: #e0f3ff;
     background: none;
     width: 100%;
     padding: 0;
@@ -206,11 +205,11 @@
 .bridge_box_second_1_2_2_1_1_1_img{
     width: 24px;
     height: 24px;
+    border-radius:50%;
 }
 .bridge_box_second_1_2_2_1_1_1_Token_name{
     font-style: normal;
     font-weight: 400;
-    color: white;
     font-size: 1rem;
     line-height: 1.25rem;
     text-transform: none;
@@ -218,7 +217,6 @@
 .bridge_box_second_2_1{
     font-style: normal;
     font-weight: 400;
-    color: white;
     font-size: 1rem;
     line-height: 1.25rem;
     text-transform: none;
@@ -230,8 +228,8 @@
     padding: 8px 20px;
     height: 64px;
     width: 100%;
-    background: #2d2e33;
-    border: 1px solid #4c4e57;
+    background: var(--aside_bar_bg);
+    border: 1px solid var(--white_black_border);
     border-radius: 32px;
     cursor: pointer;
 }
@@ -255,6 +253,7 @@
 .bridge_box_second_2_2_1_1_1_img{
     width:24px;
     height:24px;
+    border-radius:50%;
 }
 .bridge_box_second_2_2_1_1_1_2{
     display: flex;
@@ -266,7 +265,6 @@
 .bridge_box_second_2_2_1_1_1_2_1{
     font-style: normal;
     font-weight: 400;
-    color: white;
     font-size: 1rem;
     line-height: 1.25rem;
     text-transform: none;
@@ -274,7 +272,6 @@
 .bridge_box_second_3_1{
     font-style: normal;
     font-weight: 400;
-    color: white;
     font-size: 1rem;
     line-height: 1.25rem;
     text-transform: none;
@@ -306,7 +303,7 @@
 .bridge_box_second_3_2_1_same{
     height: 9px;
     width: 1px;
-    background-color: #4c4e57;
+    background-color: var(--white_black_border);
 }
 .bridge_box_second_3_2_1_2{
     display: flex;
@@ -317,7 +314,7 @@
     gap: 0;
     height: 40px;
     width: 40px;
-    border: 1px solid #4c4e57;
+    border: 1px solid var(--white_black_border);
     border-radius: 32px;
     cursor: pointer;
 }
@@ -329,14 +326,13 @@
     height: 64px;
     width: 100%;
     background: #2d2e33;
-    border: 1px solid #4c4e57;
+    border: 1px solid var(--white_black_border);
     border-radius: 32px;
     cursor: pointer;
 }
 .bridge_box_second_3_3_2{
     font-style: normal;
     font-weight: 400;
-    color: white;
     font-size: 0.875rem;
     line-height: 1.125rem;
     text-transform: none;
@@ -359,6 +355,9 @@
     padding: 0px;
     gap: 12px;
 }
+.bridge_box_second_3_3_1_1_1_1_img{
+    border-radius:50%;
+}
 .bridge_box_second_3_3_1_1_1_1_1{
     display: flex;
     flex-direction: column;
@@ -370,7 +369,6 @@
 /* .bridge_box_second_3_3_1_1_1_1_1_1{
     font-style: normal;
     font-weight: 400;
-    color: white;
     font-size: 0.875rem;
     line-height: 1.125rem;
     text-transform: none;
@@ -378,14 +376,23 @@
 .bridge_box_second_3_3_1_1_1_1_1_2{
     font-style: normal;
     font-weight: 400;
-    color: whtie;
     font-size: 1rem;
     line-height: 1.25rem;
     text-transform: none;
 }
+.bridge_logo_text{
+    margin-top:5px;
+    font-weight:bold;
+}
+.box_first_div_1_1_img{
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    background-color: var(--bridge_btn_bg);
+}
 
 .bridge_btn{
-        font-style: normal;
+    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
@@ -393,11 +400,11 @@
     padding: 0px 40px;
     gap: 4px;
     border-radius: 32px;
-    background-color: transparent;
-    color: var(--color-neutrals-black-800);
-    border: none;
-    background-color: aqua;
+    background-color: var(--bridge_btn_bg);
     width: 100%;
+    color:black !important;
+    font-weight:bold;
+    cursor:pointer;
 }
 .bridge_box_third_div_1{
     display: flex;
@@ -460,7 +467,6 @@
 .bridge_box_third_div_1_2_1_same{
     font-style: normal;
     font-weight: 400;
-    color: whitesmoke;
     font-size: 1rem;
     line-height: 1.25rem;
     text-transform: none;
@@ -475,7 +481,6 @@
 .bridge_box_third_div_1_4_1_2{
     font-style: normal;
     font-weight: 400;
-    color: black;
     font-size: 1rem;
     line-height: 1.25rem;
     text-transform: none;
@@ -483,7 +488,6 @@
 .bridge_box_third_div_1_6_1{
     font-style: normal;
     font-weight: 400;
-    color: white;
     font-size: 1rem;
     line-height: 1.25rem;
     text-transform: none;
@@ -491,7 +495,6 @@
 .bridge_box_third_div_1_6_2{
     font-style: normal;
     font-weight: 400;
-    color: white;
     font-size: 1rem;
     line-height: 1.25rem;
     text-transform: none;

@@ -5,18 +5,33 @@
     padding:00px;
     margin:00px;
 }
+#header{
+    position:sticky;
+    top:00px;
+    z-index:+99;
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 .header_div{
-    background-color: var(--header_color);
+    background-color: rgba(45, 46, 51,0.1);
     height: 72px;
     padding: 0 24px;
     display: flex;
     align-items: center;
-    color: #c5d5e0;
-    position: sticky;
-    top: 0;
     width: 100%;
-    z-index: 1000;
     border-bottom: 1px solid transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .header_logo{

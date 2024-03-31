@@ -1,11 +1,15 @@
 :root{
     --header_color: #2d2e33;
     --aside_bar_bg:#2d2e33;
-    --side_top_bg:#6CF9D8;
+    --side_top_bg:#00FFFF;
     --side_bar_line_hover:#44464c;
     --header_links_color:#d3d3d3;
+    --body_bg:#0d172b;
+    --bridge_btn_bg:#00FFFF;
+    --white_black_border:#4c4e57;
 }
 
 :root {
     --header_links_font:Optima, sans-serif;
+    --bridge_box_font:Andale Mono, monospace;
 }
