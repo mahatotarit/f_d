@@ -1,326 +1,241 @@
-<div id="modal">
-  <div direction="[object Object]" data-cy="undefined-modal" class="css-tde9nd">
-    <div width="400" class="css-sf08b4">
-      <div class="css-1m13db3">
+<!-- coin select modal box  -->
+<div id="bridge_coin_select_modal">
+  <div class="bridge_modal_parent_div" id="bridge_coin_modal_parent_div">
+    <div width="400" class="bridge_modal_inner_div">
+      <div class="modal_top_part_div">
         <div><div color="grey-400" class="css-1pzc15u">Coins</div></div>
-        <svg
-          width="16"
-          height="16"
-          viewBox="0 0 16 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="css-1h5x3dy"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M13.1971 3.69677C13.49 3.40388 13.49 2.92901 13.1971 2.63611C12.9042 2.34322 12.4293 2.34322 12.1364 2.63611L7.91653 6.85599L3.69665 2.63611C3.40376 2.34322 2.92888 2.34322 2.63599 2.63611C2.3431 2.92901 2.3431 3.40388 2.63599 3.69677L6.85587 7.91665L2.63599 12.1365C2.3431 12.4294 2.3431 12.9043 2.63599 13.1972C2.92888 13.4901 3.40376 13.4901 3.69665 13.1972L7.91653 8.97731L12.1364 13.1972C12.4293 13.4901 12.9042 13.4901 13.1971 13.1972C13.49 12.9043 13.49 12.4294 13.1971 12.1365L8.97719 7.91665L13.1971 3.69677Z"
-            fill="#9DAAB2"
-          ></path>
-        </svg>
+        <img class="modal_close_icon" id="coin_modal_close_icon" src="assets/image/svg/close_white.svg" alt="">
       </div>
-      <div class="css-1fe3oy6"></div>
-      <div class="css-1dve4j4">
-        <div class="css-1nk4agk">
-          <div class="css-eec57t">
-            <div class="css-j04x1u">
-              <img
-                src="/assets/ethereum-logo-4706363e.svg"
-                class="css-rq7z01"
-              />
-              <div color="white-100" class="css-1y6ijbx">ETH</div>
+      <input type="text" class="search_coin" placeholder="Search Coin">
+      <div class="modal_underline_div"></div>
+      <div class="modal_div_token_list">
+
+        <label for="eth_coin" class="token_parent_div">
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_1_1">
+              <img src="assets/image/token/ethereum.svg"/>
+              <div color="white-100" class="token_name_div">ETH</div>
             </div>
           </div>
-          <div class="css-eec57t">
-            <div class="css-oboplj">
-              <div color="grey-400" class="css-1pzc15u">0.0000951</div>
-              <div class="css-u11p0y"><div class="css-1gzhim"></div></div>
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_2_1">
+              <div color="grey-400" class="token_balance_value">0.0000951</div>
+              <input type="radio" id="eth_coin" value="eth" name="seleted_coin" checked class="token_select_radio_btn">
             </div>
           </div>
-        </div>
-        <div class="css-ly2bxq">
-          <div class="css-eec57t">
-            <div class="css-j04x1u">
-              <img src="/assets/weth-logo-383b54e9.svg" class="css-rq7z01" />
-              <div color="white-100" class="css-1y6ijbx">WETH</div>
+        </label>
+
+        <label for="weth_coin" class="token_parent_div">
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_1_1">
+              <img src="assets/image/token/weth.svg"/>
+              <div color="white-100" class="token_name_div">WETH</div>
             </div>
           </div>
-          <div class="css-eec57t">
-            <div class="css-oboplj"><div class="css-x10d30"></div></div>
-          </div>
-        </div>
-        <div class="css-ly2bxq">
-          <div class="css-eec57t">
-            <div class="css-j04x1u">
-              <img src="/assets/usdc-logo-95f15669.png" class="css-rq7z01" />
-              <div color="white-100" class="css-1y6ijbx">USDC</div>
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_2_1">
+              <div color="grey-400" class="token_balance_value"></div>
+              <input type="radio" id="weth_coin" value="weth" name="seleted_coin" class="token_select_radio_btn">
             </div>
           </div>
-          <div class="css-eec57t">
-            <div class="css-oboplj"><div class="css-x10d30"></div></div>
-          </div>
-        </div>
-        <div class="css-ly2bxq">
-          <div class="css-eec57t">
-            <div class="css-j04x1u">
-              <img src="/assets/usdt-logo-fc9c52d6.svg" class="css-rq7z01" />
+        </label>
+
+        <div class="token_parent_div not_supported_bg">
+          <div>
+            <div class="token_name_parent_div">
+              <img src="assets/image/token/usdt.svg" class="css-rq7z01" />
               <div color="white-100" class="css-1y6ijbx">USDT</div>
             </div>
           </div>
-          <div class="css-eec57t">
-            <div class="css-oboplj"><div class="css-x10d30"></div></div>
-          </div>
-        </div>
-        <div class="css-ly2bxq">
-          <div class="css-eec57t">
-            <div class="css-j04x1u">
-              <img src="/assets/dai-a5c4c6fd.svg" class="css-rq7z01" />
-              <div color="white-100" class="css-1y6ijbx">DAI</div>
-            </div>
-          </div>
-          <div class="css-eec57t">
-            <div class="css-oboplj"><div class="css-x10d30"></div></div>
-          </div>
-        </div>
-        <div class="css-ly2bxq">
-          <div class="css-eec57t">
-            <div class="css-j04x1u">
-              <img src="/assets/wbtc-66b19847.svg" class="css-rq7z01" />
-              <div color="white-100" class="css-1y6ijbx">WBTC</div>
-            </div>
-          </div>
-          <div class="css-eec57t">
-            <div class="css-oboplj"><div class="css-x10d30"></div></div>
-          </div>
-        </div>
-        <div class="css-ly2bxq">
-          <div class="css-eec57t">
-            <div class="css-j04x1u">
-              <img src="/assets/bal-68871b30.svg" class="css-rq7z01" />
-              <div color="white-100" class="css-1y6ijbx">BAL</div>
-            </div>
-          </div>
-          <div class="css-eec57t">
-            <div class="css-oboplj"><div class="css-x10d30"></div></div>
-          </div>
-        </div>
-        <div class="css-ly2bxq">
-          <div class="css-eec57t">
-            <div class="css-j04x1u">
-              <img src="/assets/uma-b796432b.svg" class="css-rq7z01" />
-              <div color="white-100" class="css-1y6ijbx">UMA</div>
-            </div>
-          </div>
-          <div class="css-eec57t">
-            <div class="css-oboplj"><div class="css-x10d30"></div></div>
-          </div>
-        </div>
-        <div class="css-ly2bxq">
-          <div class="css-eec57t">
-            <div class="css-j04x1u">
-              <img src="/assets/across-0de1e30c.svg" class="css-rq7z01" />
-              <div color="white-100" class="css-1y6ijbx">ACX</div>
-            </div>
-          </div>
-          <div class="css-eec57t">
-            <div class="css-oboplj"><div class="css-x10d30"></div></div>
-          </div>
-        </div>
-        <div class="css-ly2bxq">
-          <div disabled="" class="css-rf1eo">
-            <div class="css-j04x1u">
-              <img src="/assets/usdc-logo-95f15669.png" class="css-rq7z01" />
-              <div color="white-100" class="css-1y6ijbx">USDC.e</div>
-            </div>
-          </div>
-          <div class="css-eec57t">
-            <div class="css-1pd5vge">
-              <div color="grey-400" class="css-1h8quz">Not supported</div>
-              <a
-                data-tooltip-id="selector-disabled-9"
-                data-tooltip-place="bottom-start"
-                class="css-1tsrelf"
-                ><div class="css-6diodp">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="css-b4lmtr"
-                  >
-                    <path
-                      d="M8.00004 14.6666C11.6819 14.6666 14.6667 11.6818 14.6667 7.99992C14.6667 4.31802 11.6819 1.33325 8.00004 1.33325C4.31814 1.33325 1.33337 4.31802 1.33337 7.99992C1.33337 11.6818 4.31814 14.6666 8.00004 14.6666Z"
-                      stroke="#9DAAB2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M8 10.6667V8"
-                      stroke="#9DAAB2"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M8 5.33374H8.00667"
-                      stroke="#9DAAB2"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </svg></div
-              ></a>
+          <div>
+            <div class="token_not_support-right_div">
+              <div class="css-1h8quz">Not supported</div>
+              <a>
+                <div>
+                  <img src="assets/image/svg/info.svg" alt="">
+                </div>
+              </a>
             </div>
           </div>
         </div>
-        <div class="css-ly2bxq">
-          <div disabled="" class="css-rf1eo">
-            <div class="css-j04x1u">
-              <img src="/assets/usdc-logo-95f15669.png" class="css-rq7z01" />
-              <div color="white-100" class="css-1y6ijbx">USDbC</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- from network select modal box  -->
+<div id="bridge_coin_select_modal">
+  <div class="bridge_modal_parent_div" id="bridge_from_network_modal_parent_div">
+    <div width="400" class="bridge_modal_inner_div">
+      <div class="modal_top_part_div">
+        <div><div color="grey-400" class="css-1pzc15u">From Network</div></div>
+        <img class="modal_close_icon" id="from_network_modal_close_icon" src="assets/image/svg/close_white.svg" alt="">
+      </div>
+      <input type="text" class="search_coin" placeholder="Search from network">
+      <div class="modal_underline_div"></div>
+      <div class="modal_div_token_list">
+
+        <label for="ethereum_from_network" class="token_parent_div">
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_1_1">
+              <img src="assets/image/token/ethereum.svg"/>
+              <div color="white-100" class="token_name_div">Ethereum</div>
             </div>
           </div>
-          <div class="css-eec57t">
-            <div class="css-1pd5vge">
-              <div color="grey-400" class="css-1h8quz">Not supported</div>
-              <a
-                data-tooltip-id="selector-disabled-10"
-                data-tooltip-place="bottom-start"
-                class="css-1tsrelf"
-                ><div class="css-6diodp">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="css-b4lmtr"
-                  >
-                    <path
-                      d="M8.00004 14.6666C11.6819 14.6666 14.6667 11.6818 14.6667 7.99992C14.6667 4.31802 11.6819 1.33325 8.00004 1.33325C4.31814 1.33325 1.33337 4.31802 1.33337 7.99992C1.33337 11.6818 4.31814 14.6666 8.00004 14.6666Z"
-                      stroke="#9DAAB2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M8 10.6667V8"
-                      stroke="#9DAAB2"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M8 5.33374H8.00667"
-                      stroke="#9DAAB2"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </svg></div
-              ></a>
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_2_1">
+              <input type="radio" id="ethereum_from_network" value="ethereum" name="seleted_from_network" checked class="token_select_radio_btn">
             </div>
           </div>
-        </div>
-        <div class="css-ly2bxq">
-          <div disabled="" class="css-rf1eo">
-            <div class="css-j04x1u">
-              <img src="/assets/snx-logo-2ba7293b.svg" class="css-rq7z01" />
-              <div color="white-100" class="css-1y6ijbx">SNX</div>
+        </label>
+
+        <label for="arbitrum_from_network" class="token_parent_div">
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_1_1">
+              <img src="assets/image/network/arbitrum.svg"/>
+              <div color="white-100" class="token_name_div">Arbitrum One</div>
             </div>
           </div>
-          <div class="css-eec57t">
-            <div class="css-1pd5vge">
-              <div color="grey-400" class="css-1h8quz">Not supported</div>
-              <a
-                data-tooltip-id="selector-disabled-11"
-                data-tooltip-place="bottom-start"
-                class="css-1tsrelf"
-                ><div class="css-6diodp">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="css-b4lmtr"
-                  >
-                    <path
-                      d="M8.00004 14.6666C11.6819 14.6666 14.6667 11.6818 14.6667 7.99992C14.6667 4.31802 11.6819 1.33325 8.00004 1.33325C4.31814 1.33325 1.33337 4.31802 1.33337 7.99992C1.33337 11.6818 4.31814 14.6666 8.00004 14.6666Z"
-                      stroke="#9DAAB2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M8 10.6667V8"
-                      stroke="#9DAAB2"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M8 5.33374H8.00667"
-                      stroke="#9DAAB2"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </svg></div
-              ></a>
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_2_1">
+              <input type="radio" id="arbitrum_from_network" value="arbitrum" name="seleted_from_network" class="token_select_radio_btn">
             </div>
           </div>
-        </div>
-        <div class="css-ly2bxq">
-          <div disabled="" class="css-rf1eo">
-            <div class="css-j04x1u">
-              <img
-                src="/assets/pooltogether-logo-dd2dbe95.svg"
-                class="css-rq7z01"
-              />
-              <div color="white-100" class="css-1y6ijbx">POOL</div>
+        </label>
+
+        <label for="linea_from_network" class="token_parent_div">
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_1_1">
+              <img src="assets/image/network/linea.svg"/>
+              <div color="white-100" class="token_name_div">Linea</div>
             </div>
           </div>
-          <div class="css-eec57t">
-            <div class="css-1pd5vge">
-              <div color="grey-400" class="css-1h8quz">Not supported</div>
-              <a
-                data-tooltip-id="selector-disabled-12"
-                data-tooltip-place="bottom-start"
-                class="css-1tsrelf"
-                ><div class="css-6diodp">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="css-b4lmtr"
-                  >
-                    <path
-                      d="M8.00004 14.6666C11.6819 14.6666 14.6667 11.6818 14.6667 7.99992C14.6667 4.31802 11.6819 1.33325 8.00004 1.33325C4.31814 1.33325 1.33337 4.31802 1.33337 7.99992C1.33337 11.6818 4.31814 14.6666 8.00004 14.6666Z"
-                      stroke="#9DAAB2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M8 10.6667V8"
-                      stroke="#9DAAB2"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M8 5.33374H8.00667"
-                      stroke="#9DAAB2"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </svg></div
-              ></a>
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_2_1">
+              <input type="radio" id="linea_from_network" value="linea" name="seleted_from_network" class="token_select_radio_btn">
             </div>
           </div>
-        </div>
+        </label>
+
+        <label for="polygon_from_network" class="token_parent_div">
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_1_1">
+              <img src="assets/image/network/polygon.svg"/>
+              <div color="white-100" class="token_name_div">Polygon</div>
+            </div>
+          </div>
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_2_1">
+              <input type="radio" id="polygon_from_network" value="polygon" name="seleted_from_network" class="token_select_radio_btn">
+            </div>
+          </div>
+        </label>
+
+        <label for="base_from_network" class="token_parent_div">
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_1_1">
+              <img src="assets/image/network/base.svg"/>
+              <div color="white-100" class="token_name_div">Base</div>
+            </div>
+          </div>
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_2_1">
+              <input type="radio" id="base_from_network" value="base" name="seleted_from_network" class="token_select_radio_btn">
+            </div>
+          </div>
+        </label>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- to network select modal box  -->
+<div id="bridge_coin_select_modal">
+  <div class="bridge_modal_parent_div" id="bridge_to_network_modal_parent_div">
+    <div width="400" class="bridge_modal_inner_div">
+      <div class="modal_top_part_div">
+        <div><div color="grey-400" class="css-1pzc15u">To Network</div></div>
+        <img class="modal_close_icon" id="to_network_modal_close_icon" src="assets/image/svg/close_white.svg" alt="">
+      </div>
+      <input type="text" class="search_coin" placeholder="Search to network">
+      <div class="modal_underline_div"></div>
+      <div class="modal_div_token_list">
+
+        <label for="ethereum_to_network" class="token_parent_div">
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_1_1">
+              <img src="assets/image/token/ethereum.svg"/>
+              <div color="white-100" class="token_name_div">Ethereum</div>
+            </div>
+          </div>
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_2_1">
+              <input type="radio" id="ethereum_to_network" value="ethereum" name="seleted_to_network" checked class="token_select_radio_btn">
+            </div>
+          </div>
+        </label>
+
+        <label for="arbitrum_to_network" class="token_parent_div">
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_1_1">
+              <img src="assets/image/network/arbitrum.svg"/>
+              <div color="white-100" class="token_name_div">Arbitrum One</div>
+            </div>
+          </div>
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_2_1">
+              <input type="radio" id="arbitrum_to_network" value="arbitrum" name="seleted_to_network" class="token_select_radio_btn">
+            </div>
+          </div>
+        </label>
+
+        <label for="linea_to_network" class="token_parent_div">
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_1_1">
+              <img src="assets/image/network/linea.svg"/>
+              <div color="white-100" class="token_name_div">Linea</div>
+            </div>
+          </div>
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_2_1">
+              <input type="radio" id="linea_to_network" value="linea" name="seleted_to_network" class="token_select_radio_btn">
+            </div>
+          </div>
+        </label>
+
+        <label for="polygon_to_network" class="token_parent_div">
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_1_1">
+              <img src="assets/image/network/polygon.svg"/>
+              <div color="white-100" class="token_name_div">Polygon</div>
+            </div>
+          </div>
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_2_1">
+              <input type="radio" id="polygon_to_network" value="polygon" name="seleted_to_network" class="token_select_radio_btn">
+            </div>
+          </div>
+        </label>
+
+        <label for="base_to_network" class="token_parent_div">
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_1_1">
+              <img src="assets/image/network/base.svg"/>
+              <div color="white-100" class="token_name_div">Base</div>
+            </div>
+          </div>
+          <div class="token_parent_div_1_same">
+            <div class="token_parent_div_2_1">
+              <input type="radio" id="base_to_network" value="base" name="seleted_to_network" class="token_select_radio_btn">
+            </div>
+          </div>
+        </label>
+
+
       </div>
     </div>
   </div>

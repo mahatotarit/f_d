@@ -1,4 +1,4 @@
-@import url("c_f.css");
+@import url("common/c_f.css");
 
 
 body{
@@ -42,7 +42,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background: #34353b;
+    background: var(--bridge_box_bg);
     border: 1px solid #3e4047;
     border-radius: 10px;
     flex-wrap: nowrap;
@@ -55,7 +55,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background: #34353b;
+    background: var(--bridge_box_bg);
     border: 1px solid #3e4047;
     border-radius: 10px;
     flex-wrap: nowrap;
@@ -71,7 +71,7 @@ body{
 }
 
 .box_first_div_2{
-    background: #34353b;
+    background: var(--white_black_border);
     height: 1px;
     width: 100%;
 }
@@ -383,6 +383,12 @@ body{
 .bridge_logo_text{
     margin-top:5px;
     font-weight:bold;
+    margin-left:20px;
+}
+.box_first_div_1_1{
+    display:flex;
+    justify-content:start;
+    align-items:center;
 }
 .box_first_div_1_1_img{
     border-radius: 5px;
@@ -433,14 +439,14 @@ body{
     width: 100%;
 }
 .bridge_box_third_div_1_3{
-        height: 1px;
+    height: 1px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
     align-self: stretch;
-    background: black   ;
+    background: var(--body_bg);
     width: 100%;
 }
 .bridge_box_third_div_1_4{
@@ -461,7 +467,7 @@ body{
     align-items: center;
     gap: 10px;
     align-self: stretch;
-    background: black;
+    background: var(--body_bg);
     width: 100%;
 }
 .bridge_box_third_div_1_2_1_same{
@@ -485,6 +491,36 @@ body{
     line-height: 1.25rem;
     text-transform: none;
 }
+.net_fee_details{
+    width:100%;
+    padding:00px 10px;
+    transition: 0.2s;
+    overflow: hidden;
+    display: none;
+}
+.net_fee_details_1_1{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+}
+.net_fee_details_2_1{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+}
+.net_fee_details_1,.net_fee_details_2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 6px;
+    width: 100%;
+    cursor: pointer;
+    margin-top:10px;
+}
 .bridge_box_third_div_1_6_1{
     font-style: normal;
     font-weight: 400;
@@ -498,4 +534,7 @@ body{
     font-size: 1rem;
     line-height: 1.25rem;
     text-transform: none;
+}
+.open_net_fee{
+    display: block !important;
 }
