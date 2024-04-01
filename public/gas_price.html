@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Network Gas Tracker</title>
+    <link rel="stylesheet" href="assets/css/common/header.css" />
+    <link rel="stylesheet" href="assets/css/gas_price.css" />
+
+    <style>
+      * {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header"></header>
+
+    <center class="gas_tracker_heading">
+      <h1>Gas Tracker ⛽</h1>
+    </center>
+
+    <div class="select_netwok_div">
+
+       <div class="select_btn_parent">
+         <input type="radio" checked hidden id="mainnet" name="network" class="network_select_radio">
+         <label for="mainnet" id="mainnet_label" class="network_select_btn">Mainnet</label>
+         
+         <input type="radio" hidden id="testnet" name="network" class="network_select_radio">
+         <label for="testnet" id="testnet_label" class="network_select_btn">Testnet</label>
+       </div>
+
+    </div>
+
+    <section id="main_net_gas_tracker_section" class="gas_tracker_section">
+      <div class="next_update_div">
+       <b>Next update in <span class="update_dy_sec">5</span>s</b>
+      </div>
+
+     <script>
+       for (let i = 0; i < 12; i++) {
+          document.write(`
+              <div class="main_n_g_t_s_p_d">
+                <div class="main_n_g_t_s_p_d_1">
+                    <img class="gas_network_img" src="assets/image/network/ethereum.svg" alt="">
+                    <div class="gas_img_net_name">Ethereum</div>
+                </div>
+
+                <div class="main_n_g_t_s_p_d_2">
+                <div id="divLow">
+                    <div class="gas_text_all_parent">
+                    <h4 class="all_center mt_same gas_position_h4">
+                        <img src="assets/image/imoji/smile3.webp" width="20px" />
+                        Low
+                    </h4>
+                    <div id="divLowPrice" class="all_gas_price_div">
+                        <div>
+                        <div class="all_center mt_same" id="divlowgweiPrice"><span id="spanLowPrice">17</span> gwei</div>
+                        <div class="all_center mt_same">
+                            <span id="spanLowPriorityAndBase">Base: 16 | Priority: 1</span>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="main_n_g_t_s_p_d_3">
+                <div>
+                    <div class="gas_text_all_parent">
+                    <h4 class="all_center mt_same gas_position_h4">
+                        <img src="assets/image/imoji/smile2.webp" width="20px" />
+                        Average
+                    </h4>
+                    <div id="divAvgPrice" class="all_gas_price_div">
+                        <div>
+                        <div class="all_center mt_same" id="divaveragegweiPrice"><span id="spanAvgPrice">17</span> gwei</div>
+                        <div class="all_center mt_same">
+                            <span id="spanProposePriorityAndBase">Base: 166 | Priority: 1</span>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="main_n_g_t_s_p_d_4">
+                <div>
+                    <div class="gas_text_all_parent">
+                    <h4 class="all_center mt_same gas_position_h4">
+                        <img src="assets/image/imoji/smile1.webp" width="20px" />
+                        High
+                    </h4>
+                    <div id="divHighPrice" class="all_gas_price_div">
+                        <div>
+                        <div class="all_center mt_same" id="divhighgweiPrice"> 
+                            <span><span id="spanHighPrice">19</span> gwei</span>
+                        </div>
+                        <div class="all_center mt_same">
+                            <span id="spanHighPriorityAndBase">Base: 16 | Priority: 3</span>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+          `);
+       }       
+     </script>
+
+      <!-- <div class="main_n_g_t_s_p_d">
+        <div class="main_n_g_t_s_p_d_1">
+            <img class="gas_network_img" src="assets/image/network/ethereum.svg" alt="">
+            <div class="gas_img_net_name">Ethereum</div>
+        </div>
+
+        <div class="main_n_g_t_s_p_d_2">
+          <div id="divLow">
+            <div class="gas_text_all_parent">
+              <h4 class="all_center mt_same gas_position_h4">
+                <img src="assets/image/imoji/smile3.webp" width="20px" />
+                Low
+              </h4>
+              <div id="divLowPrice" class="all_gas_price_div">
+                <div>
+                  <div class="all_center mt_same" id="divlowgweiPrice"><span id="spanLowPrice">17</span> gwei</div>
+                  <div class="all_center mt_same">
+                    <span id="spanLowPriorityAndBase">Base: 16 | Priority: 1</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main_n_g_t_s_p_d_3">
+          <div>
+            <div class="gas_text_all_parent">
+              <h4 class="all_center mt_same gas_position_h4">
+                <img src="assets/image/imoji/smile2.webp" width="20px" />
+                Average
+              </h4>
+              <div id="divAvgPrice" class="all_gas_price_div">
+                <div>
+                  <div class="all_center mt_same" id="divaveragegweiPrice"><span id="spanAvgPrice">17</span> gwei</div>
+                  <div class="all_center mt_same">
+                    <span id="spanProposePriorityAndBase">Base: 166 | Priority: 1</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main_n_g_t_s_p_d_4">
+          <div>
+            <div class="gas_text_all_parent">
+              <h4 class="all_center mt_same gas_position_h4">
+                <img src="assets/image/imoji/smile1.webp" width="20px" />
+                High
+              </h4>
+              <div id="divHighPrice" class="all_gas_price_div">
+                <div>
+                  <div class="all_center mt_same" id="divhighgweiPrice"> 
+                    <span><span id="spanHighPrice">19</span> gwei</span>
+                  </div>
+                  <div class="all_center mt_same">
+                    <span id="spanHighPriorityAndBase">Base: 16 | Priority: 3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    </section>
+
+    <section id="test_net_gas_tracker_section" class="gas_tracker_section hide">
+     <div class="next_update_div">
+      <b>Next update in <span class="update_dy_sec">5</span>s</b>
+     </div>
+
+     <script>
+       for (let i = 0; i < 12; i++) {
+          document.write(`
+              <div class="main_n_g_t_s_p_d">
+                <div class="main_n_g_t_s_p_d_1">
+                    <img class="gas_network_img" src="assets/image/network/ethereum.svg" alt="">
+                    <div class="gas_img_net_name">Ethereum</div>
+                </div>
+
+                <div class="main_n_g_t_s_p_d_2">
+                <div id="divLow">
+                    <div class="gas_text_all_parent">
+                    <h4 class="all_center mt_same gas_position_h4">
+                        <img src="assets/image/imoji/smile3.webp" width="20px" />
+                        Low
+                    </h4>
+                    <div id="divLowPrice" class="all_gas_price_div">
+                        <div>
+                        <div class="all_center mt_same" id="divlowgweiPrice"><span id="spanLowPrice">17</span> gwei</div>
+                        <div class="all_center mt_same">
+                            <span id="spanLowPriorityAndBase">Base: 16 | Priority: 1</span>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="main_n_g_t_s_p_d_3">
+                <div>
+                    <div class="gas_text_all_parent">
+                    <h4 class="all_center mt_same gas_position_h4">
+                        <img src="assets/image/imoji/smile2.webp" width="20px" />
+                        Average
+                    </h4>
+                    <div id="divAvgPrice" class="all_gas_price_div">
+                        <div>
+                        <div class="all_center mt_same" id="divaveragegweiPrice"><span id="spanAvgPrice">17</span> gwei</div>
+                        <div class="all_center mt_same">
+                            <span id="spanProposePriorityAndBase">Base: 166 | Priority: 1</span>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="main_n_g_t_s_p_d_4">
+                <div>
+                    <div class="gas_text_all_parent">
+                    <h4 class="all_center mt_same gas_position_h4">
+                        <img src="assets/image/imoji/smile1.webp" width="20px" />
+                        High
+                    </h4>
+                    <div id="divHighPrice" class="all_gas_price_div">
+                        <div>
+                        <div class="all_center mt_same" id="divhighgweiPrice"> 
+                            <span><span id="spanHighPrice">19</span> gwei</span>
+                        </div>
+                        <div class="all_center mt_same">
+                            <span id="spanHighPriorityAndBase">Base: 16 | Priority: 3</span>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+          `);
+       }       
+     </script>
+
+      <!-- <div class="main_n_g_t_s_p_d">
+        <div class="main_n_g_t_s_p_d_1">
+            <img class="gas_network_img" src="assets/image/network/ethereum.svg" alt="">
+            <div class="gas_img_net_name">Ethereum</div>
+        </div>
+
+        <div class="main_n_g_t_s_p_d_2">
+          <div id="divLow">
+            <div class="gas_text_all_parent">
+              <h4 class="all_center mt_same gas_position_h4">
+                <img src="assets/image/imoji/smile3.webp" width="20px" />
+                Low
+              </h4>
+              <div id="divLowPrice" class="all_gas_price_div">
+                <div>
+                  <div class="all_center mt_same" id="divlowgweiPrice"><span id="spanLowPrice">17</span> gwei</div>
+                  <div class="all_center mt_same">
+                    <span id="spanLowPriorityAndBase">Base: 16 | Priority: 1</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main_n_g_t_s_p_d_3">
+          <div>
+            <div class="gas_text_all_parent">
+              <h4 class="all_center mt_same gas_position_h4">
+                <img src="assets/image/imoji/smile2.webp" width="20px" />
+                Average
+              </h4>
+              <div id="divAvgPrice" class="all_gas_price_div">
+                <div>
+                  <div class="all_center mt_same" id="divaveragegweiPrice"><span id="spanAvgPrice">17</span> gwei</div>
+                  <div class="all_center mt_same">
+                    <span id="spanProposePriorityAndBase">Base: 166 | Priority: 1</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main_n_g_t_s_p_d_4">
+          <div>
+            <div class="gas_text_all_parent">
+              <h4 class="all_center mt_same gas_position_h4">
+                <img src="assets/image/imoji/smile1.webp" width="20px" />
+                High
+              </h4>
+              <div id="divHighPrice" class="all_gas_price_div">
+                <div>
+                  <div class="all_center mt_same" id="divhighgweiPrice"> 
+                    <span><span id="spanHighPrice">19</span> gwei</span>
+                  </div>
+                  <div class="all_center mt_same">
+                    <span id="spanHighPriorityAndBase">Base: 16 | Priority: 3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    </section>
+  </body>
+</html>
+
+<script src="assets/js/header.js"></script>
+<script src="assets/js/gas_price.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', async function () {
+    try {
+      const header_fetch = fetch('common/header.html');
+
+      const [header_fetch_response] = await Promise.all([header_fetch]);
+
+      if (!header_fetch_response.ok)
+        throw new Error('Network response for header was not ok');
+      const headerData = await header_fetch_response.text();
+      document.querySelector('#header').innerHTML = headerData;
+
+      header();
+    } catch (error) {
+      console.error('Error loading header.html:', error);
+    }
+  });
+</script>

@@ -14,4 +14,9 @@
 :root {
     --header_links_font:Optima, sans-serif;
     --bridge_box_font:Andale Mono, monospace;
+    
+    --gas_tracker_heading:OCR A Std, monospace;
+    --gas_gwei_text:Courier New, monospace;
+    --gas_position_text:sans-serif;
+    --monospace:monospace ;
 }

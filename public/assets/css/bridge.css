@@ -1,10 +1,5 @@
 @import url("common/c_f.css");
 
-
-body{
-    background-color:var(--body_bg);
-}
-
 .bridge_box_all_parent{
     background-color: transparent;
     width: 100%;

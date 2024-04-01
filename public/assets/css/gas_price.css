@@ -1,0 +1,123 @@
+.gas_tracker_section{
+   width:100%; 
+   padding: 10px; 
+   margin-top:1rem; 
+}
+.select_netwok_div{
+    width: 100%;
+    padding: 5px;
+    margin-top: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select_btn_parent{
+    background-color: var(--aside_bar_bg);
+    padding: 5px;
+    border-radius: 5px;
+}
+.network_select_btn{
+    font-family: var(--gas_position_text);
+    min-width: 100px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+#mainnet_label,#testnet_label{
+    padding: 5px;
+    transition: 0.3s;
+}
+#mainnet:checked + label {
+    background-color: var(--body_bg) !important; /* Change the background color to your desired color */
+}
+#testnet:checked + label {
+    background-color: var(--body_bg) !important; /* Change the background color to your desired color */
+}
+
+.main_n_g_t_s_p_d{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gas_tracker_heading{
+    margin-top: 20px;
+}
+.gas_tracker_heading h1{
+  font-family: var(--gas_tracker_heading);
+}
+.gas_network_img{
+    height: 60px;
+    width: auto;
+    border-radius: 50%;
+}
+.main_n_g_t_s_p_d_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column !important;
+}
+.main_n_g_t_s_p_d_1 , .main_n_g_t_s_p_d_2, .main_n_g_t_s_p_d_3 , .main_n_g_t_s_p_d_4{
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 200px;
+    width: 24%;
+    background-color: var(--aside_bar_bg);
+}
+.next_update_div{
+    padding-left: 10px;
+    font-family: var(--gas_position_text);
+}
+.update_dy_sec{
+    color: var(--bridge_btn_bg);
+}
+.gas_text_all_parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.all_gas_price_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.gas_position_h4{
+    font-family: var(--gas_position_text);
+}
+.gas_img_net_name{
+    font-family: var(--gas_position_text);
+    font-weight: 600;
+    margin-top: 20px;
+}
+.all_center{
+   gap: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.mt_same{
+    margin-top:10px;
+}
+#divhighgweiPrice,
+#divaveragegweiPrice,
+#divlowgweiPrice
+{
+    font-size: 1.5rem;
+    font-family: var(--gas_gwei_text);
+}
+
+#spanProposePriorityAndBase,
+#spanHighPriorityAndBase,
+#spanLowPriorityAndBase{
+  font-family: var(--monospace);
+}
+
+.hide{
+    display: none !important;
+    opacity: 0 !important;
+    transition: 0.2s;
+}

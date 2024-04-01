@@ -19,6 +19,9 @@ input[type="number"] {
 ::-webkit-scrollbar {
     display: none;
 }
+body{
+    background-color:var(--body_bg);
+}
 #header{
     position:sticky;
     top:00px;
