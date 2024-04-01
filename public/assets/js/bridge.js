@@ -23,6 +23,13 @@ async function bridge_modal(){
   let modal_close_icon = document.querySelector('#coin_modal_close_icon');
   modal_close_icon.addEventListener('click', open_coin_list_modal_fun);
 
+  bridge_modal_parent_div.addEventListener('click', function (event) {
+    if (event.target === this) {
+      open_coin_list_modal_fun();
+    }
+  });
+
+
   //  ==========================================
   // open from network list modal box
   let bridge_from_network_modal_parent_div = document.querySelector(
@@ -47,6 +54,15 @@ async function bridge_modal(){
     open_from_network_fun,
   );
 
+    bridge_from_network_modal_parent_div.addEventListener(
+      'click',
+      function (event) {
+        if (event.target === this) {
+          open_from_network_fun();
+        }
+      },
+    );
+
   //  ==========================================
   // open to network list modal box
   let bridge_to_network_modal_parent_div = document.querySelector(
@@ -63,5 +79,18 @@ async function bridge_modal(){
     '#to_network_modal_close_icon',
   );
   to_network_modal_close_icon.addEventListener('click', open_to_network_fun);
+
+   bridge_to_network_modal_parent_div.addEventListener(
+     'click',
+     function (event) {
+       if (event.target === this) {
+         open_to_network_fun();
+       }
+     },
+   );
+
+
+
+
 }
 
