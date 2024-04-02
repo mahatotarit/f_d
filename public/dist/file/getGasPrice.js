@@ -123,7 +123,7 @@ async function auto_fetch_main_gas() {
   set_main_content();
   
   setTimeout(() => {
-    // auto_fetch_main_gas();
+    auto_fetch_main_gas();
   }, 1000);
 
   first_time_fetch = false;
@@ -143,9 +143,8 @@ async function auto_fetch_test_gas() {
   set_test_content();
   
   setTimeout(() => {
-    // auto_fetch_test_gas();
+    auto_fetch_test_gas();
   }, 1000);
-  console.log(test_networks[0][4]);
 
 }
 auto_fetch_test_gas();
