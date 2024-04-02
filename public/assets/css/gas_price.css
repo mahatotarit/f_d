@@ -71,7 +71,7 @@
     background-color: var(--aside_bar_bg);
 }
 .next_update_div{
-    padding-left: 10px;
+    margin-left: 1rem;
     font-family: var(--gas_position_text);
 }
 .update_dy_sec{
