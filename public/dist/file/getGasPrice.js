@@ -110,6 +110,7 @@ const test_networks = [
 ];
 
 // ====================================================================
+let first_time_fetch = true;
 // auto fetch gasprice
 async function auto_fetch_main_gas() {
 
@@ -118,12 +119,14 @@ async function auto_fetch_main_gas() {
     main_networks[i][4] = gas_price_result;
   }
 
+  stop_loadingc_c();
   set_main_content();
   
   setTimeout(() => {
-    auto_fetch_main_gas();
+    // auto_fetch_main_gas();
   }, 1000);
-  console.log(main_networks[0][4]);
+
+  first_time_fetch = false;
 
 }
 auto_fetch_main_gas();
@@ -140,7 +143,7 @@ async function auto_fetch_test_gas() {
   set_test_content();
   
   setTimeout(() => {
-    auto_fetch_test_gas();
+    // auto_fetch_test_gas();
   }, 1000);
   console.log(test_networks[0][4]);
 
@@ -358,3 +361,23 @@ async function set_test_content() {
   test_gas_tracker_section.innerHTML = section_test_data;
   section_test_data = ``;
 }
+// ==================================== loading Animation ===========================
+
+function stop_loadingc_c(){
+   clearInterval(loading_c_i);
+   loadin_count_div.classList.add('d-none');
+   loadin_count_div.classList.add('move');
+}
+
+let loadin_count_div = document.querySelector('.loading_main_div');
+let count_l_c = 1;
+function incthe_load_c() {
+  loadin_count_div.innerHTML = `<h1 class="loading_count">${count_l_c}</h1>`;
+  count_l_c++;
+}
+
+let loading_c_i = setInterval(() => {
+  incthe_load_c();
+}, 1000);
+
+incthe_load_c();

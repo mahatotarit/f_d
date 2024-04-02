@@ -135,3 +135,39 @@
 .high_gwei_gas_div *,.high_gwei_gas_div{
     color:var(--red_high_color) !important;
 }
+
+.d-none{
+    display:none;
+    opacity:0;
+}
+.move{
+    top:2000px !important;
+}
+
+/* =================== loading animation ======================== */
+.loading_main_div{
+    position: fixed;
+    z-index: +9; 
+    top: 00px;
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+    background-color: var(--body_bg);
+}
+.loading_count{
+    animation:smalltobit 1s linear;
+}
+@keyframes smalltobit {
+    0%{
+        font-size: auto;
+        opacity: 1;
+    }
+
+    100%{
+        font-size: 200px;
+        opacity: 0;
+    }
+}
