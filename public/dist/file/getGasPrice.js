@@ -119,7 +119,9 @@ async function auto_fetch_main_gas() {
     main_networks[i][4] = gas_price_result;
   }
 
-  stop_loadingc_c();
+  if(first_time_fetch){
+    stop_loadingc_c();
+  }
   set_main_content();
   
   setTimeout(() => {
