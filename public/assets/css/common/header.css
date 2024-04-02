@@ -203,6 +203,7 @@ body{
 .side_bar_top_div .wallet_address_div{
    font-weight: bold;
    letter-spacing: 0.3px;
+   color:black;
 }
 .side_bar_top_div .aside_wallet_action_btn{
    padding:10px 20px;

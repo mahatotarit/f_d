@@ -106,17 +106,17 @@
 .mt_same{
     margin-top:10px;
 }
-#divhighgweiPrice,
-#divaveragegweiPrice,
-#divlowgweiPrice
+.high_gwei_gas_div,
+.ava_gwei_gas_div,
+.low_gwei_gas_div
 {
     font-size: 1.5rem;
     font-family: var(--gas_gwei_text);
 }
 
-#spanProposePriorityAndBase,
-#spanHighPriorityAndBase,
-#spanLowPriorityAndBase{
+.spanProposePriorityAndBase,
+.spanHighPriorityAndBase,
+.spanLowPriorityAndBase{
   font-family: var(--monospace);
 }
 
@@ -124,4 +124,14 @@
     display: none !important;
     opacity: 0 !important;
     transition: 0.2s;
+}
+
+.low_gwei_gas_div *,.low_gwei_gas_div{
+    color:var(--green_low_color) !important;
+}
+.ava_gwei_gas_div *,.ava_gwei_gas_div{
+    color:var(--skyblue_average_color) !important;
+}
+.high_gwei_gas_div *,.high_gwei_gas_div{
+    color:var(--red_high_color) !important;
 }

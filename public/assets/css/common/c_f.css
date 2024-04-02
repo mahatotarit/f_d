@@ -9,6 +9,10 @@
     --white_black_border:#4c4e57;
     --bridge_box_bg:#34353b;
     --modal_bg:#0000008c;
+
+    --green_low_color:rgb(0, 190, 160);
+    --skyblue_average_color:rgb(0, 146, 219);
+    --red_high_color:rgb(207, 16, 16);
 }
 
 :root {
