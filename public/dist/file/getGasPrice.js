@@ -123,10 +123,6 @@ async function auto_fetch_main_gas() {
     stop_loadingc_c();
   }
   set_main_content();
-  
-  setTimeout(() => {
-    auto_fetch_main_gas();
-  }, 1000);
 
   first_time_fetch = false;
 
@@ -143,10 +139,6 @@ async function auto_fetch_test_gas() {
   }
 
   set_test_content();
-  
-  setTimeout(() => {
-    auto_fetch_test_gas();
-  }, 1000);
 
 }
 auto_fetch_test_gas();
@@ -162,6 +154,9 @@ function auto_update_sec(){
       update_sec = 15;
       set_main_content();
       set_test_content();
+      
+      auto_fetch_main_gas();
+      auto_fetch_test_gas();
     } else {
       update_sec--;
     }
