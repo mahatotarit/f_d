@@ -22,8 +22,8 @@
   </nav>
   <div class="header_right_div">
     <div class="wallet_c_paren_div">
-      <button class="wallet_connect_modal_open_btn">
-        <div class="css-1i92tmo">0xC4..3BB6</div>
+      <button class="wallet_connect_modal_open_btn" id="open_connect_modal_btn">
+        <div id="connect_btn_text">Connect</div>
       </button>
     </div>
     <nav class="side_bar_tree_l_parent_nav">
@@ -72,4 +72,36 @@
     </div>
 
   </aside>
+</div>
+
+<div class="connect_wallet_modal" id="connect_wallet_modal">
+   <div class="connect_modal_div">
+
+      <div class="connect_modal_close_parent_div">
+        <button class="connect_modal_close_button">
+          <img src="assets/image/svg/close_white.svg" alt="">
+        </button>
+      </div>
+
+      <h3 class="connect_modal_heading"><b>Connect Wallet</b></h3>
+
+      <div class="connect_wallet_btn_div">
+        <button class="wallet_c_connect_btn">
+           <div class="wallet_logo_p_div">
+             <img src="assets/image/wallet/metamask.svg" alt="">
+             <span>Metamask</span>
+           </div>
+           <img src="assets/image/imoji/spinner.webp" class="d-none spinner_img" alt="">
+        </button>
+
+        <button class="wallet_c_connect_btn">
+           <div class="wallet_logo_p_div">
+             <img src="assets/image/wallet/okx.svg" style="background-color: white;" alt="">
+             <span>OKX</span>
+           </div>
+           <img src="assets/image/imoji/spinner.webp" class="d-none spinner_img" alt="">
+        </button>
+      </div>
+
+   </div>
 </div>

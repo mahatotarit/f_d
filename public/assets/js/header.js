@@ -20,5 +20,31 @@ async function header(){
       if (event.target === this) { aside_parent_div.classList.remove('open_side_bar'); }
   });
 
+
+
+  // ================================================================================
+
+    let connect_wallet_modal = document.querySelector('#connect_wallet_modal');
+    // close connect modal bar fun
+    let connect_modal_close_button = document.querySelector('.connect_modal_close_button');
+    connect_modal_close_button.addEventListener('click', close_connect_modal_bar);
+    function close_connect_modal_bar() {
+      connect_wallet_modal.classList.remove('open_connect_modal');
+    }
+
+    // open connect modal bar fun
+    let open_connect_modal_btn = document.querySelector('#open_connect_modal_btn',);
+    open_connect_modal_btn.addEventListener('click', close_connect_modal_box);
+    function close_connect_modal_box() {
+      connect_wallet_modal.classList.add('open_connect_modal');
+    }
+
+    // close side bar when user click white space of aside_parent div
+    connect_wallet_modal.addEventListener('click', function (event) {
+      if (event.target === this) {
+        aside_parent_div.classList.remove('open_connect_modal');
+      }
+    });
+
   
 }

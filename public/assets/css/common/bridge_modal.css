@@ -137,8 +137,16 @@
     padding: 0px;
     gap: 16px;
 }
+.token_parent_div_1_same{
+    display:flex;
+    align-items:center;
+    justify-content: flex-end;
+}
+.token_parent_div_1_same .info_icon{
+  margin-left:5px;  
+}
 .not_supported_bg{
-    opacity:0.5;
+    opacity:0.5 !important;
 }
 .token_select_radio_btn{
     width:18px;

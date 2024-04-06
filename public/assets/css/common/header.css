@@ -204,6 +204,7 @@ body{
    font-weight: bold;
    letter-spacing: 0.3px;
    color:black;
+   font-size:12px;
 }
 .side_bar_top_div .aside_wallet_action_btn{
    padding:10px 20px;
@@ -235,4 +236,82 @@ body{
 .aside .bottom_aside_div ul li a:hover{
     background-color:var(--side_bar_line_hover);
     color: white;
+}
+
+
+.connect_wallet_modal{
+    left:100%;
+    transition: 0.3s;
+    position:fixed;
+    top:00px;
+    z-index:+99999;
+    height:100vh;
+    width:100%;
+    display:block;
+    background-color:transparent;
+}
+.connect_wallet_modal *{
+  font-family:var(--gas_position_text);
+  color: white;
+}
+.connect_modal_div{
+    max-width:400px;
+    margin-left:auto;
+    background-color:var(--aside_bar_bg);
+    height:100%;
+    padding: 10px 20px 10px 20px;
+}
+.connect_modal_close_parent_div{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 5px 10px;
+}
+.connect_modal_close_button{
+    background-color: transparent;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.connect_wallet_btn_div{
+    border: 1px solid var(--body_bg);
+    margin-top: 1.5rem;
+    padding: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.connect_wallet_btn_div .wallet_c_connect_btn{
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--body_bg);
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.wallet_logo_p_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    gap: 10px;
+}
+.wallet_c_connect_btn img{
+    width: 20px;
+    border-radius: 5px;
+}
+.d-none{
+    display: none !important;
+}
+.open_connect_modal{
+    left: 00px !important;
 }
