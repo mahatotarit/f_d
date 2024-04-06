@@ -42,7 +42,7 @@ async function header(){
     // close side bar when user click white space of aside_parent div
     connect_wallet_modal.addEventListener('click', function (event) {
       if (event.target === this) {
-        aside_parent_div.classList.remove('open_connect_modal');
+        connect_wallet_modal.classList.remove('open_connect_modal');
       }
     });
 
