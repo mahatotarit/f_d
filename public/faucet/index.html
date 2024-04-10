@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faucet</title>
     <link rel="stylesheet" href="assets/css/index.css">
+    
 </head>
 <body>
     <header class="header" id="header">
@@ -27,20 +28,23 @@
                 <div class="select_parent_div">
                     <img src="assets/image/logo.png" class="network_logo" alt="">
                     <select name="" id="">
-                        <option value="Linea">linea</option>
-                        <option value="Linea">sepolia</option>
+                        <option value="Linea">Linea Sepolia ETH</option>
+                        <option value="Linea">Sepolia ETH</option>
+                        <option value="Linea">Base Sepolia ETH</option>
                     </select>
                 </div>
                 <input type="text" placeholder="Enter Address">
                 <button>
-                    Send
+                    Connect
                 </button>
                </div>
                <div class="sponser_ads_text">
-                  <div>
-                    <b>Sponsored TGC:</b>
-                    <span>The World’s First Licensed Telegram Gaming Platform</span>
-                    <span><a href="">Links  </a></span>
+                  <div class="sponsered_parent_div">
+                    <b>Sponsored :</b>
+                    <img src="assets/image/taritlinux.jpg" width="15px" alt="">
+                    <span>Brand Name</span>
+                    <span>Brand Text</span>
+                    <span><a href="" class="sponsored_links_a">Links </a></span>
                   </div>
                </div>
             </div>
@@ -48,7 +52,74 @@
         </div>
 
         <div class="faucet_details_div">
-          
+          <div class="token_details_div">
+
+            <div class="token_details_parent_div">
+                
+                <div class="row g-lg-10">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="d-flex">
+                        <div class="text-center me-3" style="width: 1.5rem;">
+                        <img class="img-fluid mx-auto" width="18" data-img-theme="light" src="/images/svg/brands/ethereum-original.svg" alt="Ethereum Logo">
+                        <img class="img-fluid mx-auto" width="18" data-img-theme="darkmode" src="/images/svg/brands/ethereum-original-light.svg" alt="Ethereum Logo">
+                        </div>
+                        <div class="flex-grow-1">
+                        <div class="text-cap mb-px">Ether Price</div>
+                        <a class="link-dark fs-base" href="/chart/etherprice" rel="tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom">$3,535.02<span class="text-muted"> @ 0.051004 BTC</span><span class="text-danger small"> (-2.97%)</span></a>
+                        </div>
+                        </div>
+
+                        <hr class="my-5">
+                        <div class="d-flex">
+                            <div class="me-3">
+                               <i class="fal fa-globe" style="font-size: 1.5rem;"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class="text-cap mb-px">Market Cap</div>
+                                <a class="link-dark fs-base" href="/stat/supply">
+                                $424,450,626,524.00</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 border-md-start">
+                        <hr class="d-block d-md-none my-5">
+                        <div class="d-flex">
+                            <div class="me-3">
+                               <i class="fal fa-server" style="font-size: 1.5rem;"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                               <div class="text-cap mb-px">Transactions</div>
+                                <a href="/txs" class="link-dark fs-base" rel="tooltip" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-html="true">2,328.70 M</a><span class="text-muted small" style="font-size:14px" rel="tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom"> (12.8 TPS)</span>
+                            </div>
+                            <div class="text-end">
+                               <div class="text-cap mb-px">Med Gas Price</div>
+                               <a href="/gastracker" class="link-dark fs-base" data-bs-toggle="tooltip" data-bs-html="true">15 Gwei <span class="text-muted small" style="font-size:14px">($1.11)</span></a>
+                            </div>
+                        </div>
+                        <hr class="my-5">
+                        <div class="d-flex">
+                            <div class="me-3">
+                               <i class="fal fa-gauge" style="font-size: 1.5rem;"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                               <div class="text-cap mb-px">Last Finalized Block</div>
+                               <span rel="tooltip" class="fs-base" data-bs-toggle="tooltip" data-bs-placement="bottom" stake.'="">19623281</span>
+                            </div>
+                            <div class="text-end">
+                                <div class="text-cap mb-px">Last Safe Block</div>
+                                <span rel="tooltip" class="fs-base" data-bs-toggle="tooltip" data-bs-placement="bottom">19623311</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 border-lg-start">
+                      <hr class="d-block d-lg-none my-5">
+                      <div class="text-cap mb-px">Transaction History in 14 days</div>
+                    </div>
+                </div>
+
+            </div>
+
+          </div>
         </div>
 
         <div class="transctions_details">
@@ -67,6 +138,24 @@
                         </tr>
                     </thead>
                     <tbody>
+
+                        <script>
+                            let a = ``;
+                            for (let i = 0; i < 3; i++) {
+                                a += 
+                                `
+                                <tr>
+                                    <td>k34jk234j2kj4</td>
+                                    <td><span class="tx_status_span">Success</span></td>
+                                    <td>4 days ago</td>
+                                    <td><span>skdjskj23k23k4</span><img class="w_copy_icon" src="assets/image/icon/copy.svg" alt=""></td>
+                                    <td><span>skdjskj23k23k4</span><img class="w_copy_icon" src="assets/image/icon/copy.svg" alt=""></td>
+                                    <td>34.2 LineaETH</td>
+                                </tr>
+                                `;
+                            }
+                            document.write(a);
+                        </script>
 
                         <tr>
                             <td>k34jk234j2kj4</td>

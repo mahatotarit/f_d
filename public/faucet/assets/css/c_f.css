@@ -13,6 +13,7 @@
     --white:#ffffff;
     --white_blue:#e4edf1;
     --green:green;
+    --links_blue:#0670A6;
     --white_black_border_tx:rgb(219, 219, 219);
     --green_halka_bg:rgb(197, 255, 236);
 }
@@ -27,9 +28,9 @@
     --monospace:monospace ;
 
     --tx_font:Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+    --fau_clicked_border_c:#006DBC;
 }
 :root{
-    --fau_clicked_border_c:#006DBC;
     --fau_clicked_bg:linear-gradient(#3D94D9, #0067B9);
     --fau_send_btn_border:1px solid #0077CC;
     --fau_button_bg:linear-gradient(#42A1EC, #0070C9);

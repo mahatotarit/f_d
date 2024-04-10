@@ -1,70 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Select Box Design</title>
-  <style>
-    /* Reset default styles */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Basic styles for select box */
-    .custom-select {
-      position: relative;
-      display: inline-block;
-      width: 200px; /* Adjust width as needed */
-    }
-
-    .custom-select select {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      font-size: 16px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      appearance: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      background-color: #fff;
-      cursor: pointer;
-    }
-
-    /* Styling for arrow */
-    .custom-select::after {
-      content: '\25BC'; /* Unicode character for down arrow */
-      position: absolute;
-      top: 50%;
-      right: 10px;
-      transform: translateY(-50%);
-      pointer-events: none;
-    }
-
-    /* Style when dropdown is open */
-    .custom-select select:focus {
-      outline: none;
-      border-color: #007bff;
-      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-    }
-
-    /* Style when hovering over dropdown */
-    .custom-select:hover select {
-      border-color: #007bff;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Div Layout</title>
+<style>
+  .token_details_div {
+    display: flex;
+    flex-direction: column;
+  }
+  .fitst_div,
+  .second_div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  .third_div,
+  .fourth_div {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Adjust as needed */
+  }
+  .fitst_div img,
+  .second_div img,
+  .third_div img,
+  .fourth_div img {
+    width: 50px; /* Adjust image size as needed */
+    height: auto;
+    margin-right: 10px; /* Adjust spacing between image and text as needed */
+  }
+</style>
 </head>
 <body>
 
-<div class="custom-select">
-  <select>
-    <option value="1">Option 1</option>
-    <option value="2">Option 2</option>
-    <option value="3">Option 3</option>
-    <option value="4">Option 4</option>
-  </select>
+<div class="token_details_div">
+
+  <div class="fitst_div">
+    <img src="assets/image/icon/eth.svg" alt="">
+    <div>
+      <div>TOKENS LEFT</div>
+      <div>567 ETH</div>
+    </div>
+  </div>
+
+  <div class="second_div">
+    <img src="assets/image/icon/eth.svg" alt="">
+    <div>
+      <div>TOKENS LEFT</div>
+      <div>567 ETH</div>
+    </div>
+  </div>
+
+  <div class="third_div">
+    <img src="assets/image/icon/eth.svg" alt="">
+    <div>
+      <div>TOKENS LEFT</div>
+      <div>567 ETH</div>
+    </div>
+  </div>
+
+  <div class="fourth_div">
+    <img src="assets/image/icon/eth.svg" alt="">
+    <div>
+      <div>TOKENS LEFT</div>
+      <div>567 ETH</div>
+    </div>
+  </div>
+
 </div>
 
 </body>
