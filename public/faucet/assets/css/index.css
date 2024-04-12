@@ -20,6 +20,7 @@ a:hover{
   color: var(--links_blue);
 }
 .header{
+    z-index: +99;
     padding: 10px 30px;
     display: flex;
     justify-content: space-between;
@@ -95,8 +96,11 @@ a:hover{
   
 #tx_table {
     width: 100%;
-    position: sticky;
     border-collapse: collapse; 
+
+    position: sticky !important;
+    top: 0;
+    z-index: 1;
 }
 #tx_table th,
 #tx_table td {
