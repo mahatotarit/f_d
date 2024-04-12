@@ -79,7 +79,7 @@ a:hover{
 .transctions_details{
    width: 90%;
    margin: 00rem auto;
-   margin-top: 3rem;
+   margin-top: 2rem;
    border-radius: 10px;
    box-shadow: var(--box_shadow_5px);
    background-color: white;
@@ -97,10 +97,6 @@ a:hover{
 #tx_table {
     width: 100%;
     border-collapse: collapse; 
-
-    position: sticky !important;
-    top: 0;
-    z-index: 1;
 }
 #tx_table th,
 #tx_table td {
@@ -116,7 +112,12 @@ a:hover{
 }
 
 #tx_table th {
-    font-weight: bold; 
+  font-weight: bold; 
+
+    position: sticky !important;
+    top: 0;
+    z-index: 1;
+    background-color: var(--white);
 }
 #tx_table tr > td:first-child,
 #tx_table tr > th:first-child {
@@ -348,7 +349,7 @@ a:hover{
 /* ============================================= */
 
 footer{
-  height: 200px;
+  height: 100px;
   width: 100%;
   padding: 10px;
   padding-top: 30px;
@@ -398,4 +399,24 @@ footer{
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+
+/* ======================================= */
+.sponsored_details_div{
+   width: 90%;
+   margin: 00rem auto;
+   border-radius: 10px;
+   box-shadow: var(--box_shadow_5px);
+   background-color: white;
+   height: 120px;
+   margin-top: 2rem;
+   overflow: hidden;
+}
+.spo_img_link{
+  width: 100%;
+  display: inline-block;
+}
+.spo_img_tag{
+  width: 100%;
 }
