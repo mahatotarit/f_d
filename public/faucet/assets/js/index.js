@@ -1,6 +1,6 @@
 const numbers = [3,324,12,67,100,655,300];
 
-const chart_div_height = 100;
+const chart_div_height = 75;
 
 // get last 7 day's
 const daysOfWeek = ['Sun','Mon','Tues','Wed','Thu','Fri','Sat'];
