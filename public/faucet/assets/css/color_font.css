@@ -1,0 +1,14 @@
+:root{
+    --body_bg:#101112;
+    --faucet_input_bg:#005741;
+    --btn_bg:#2B6CB0;
+    --status_box_bg:#1E1F20;
+    --heading_color:#DCFE76;
+
+    --white:white;
+    --white_black:rgb(170, 170, 170);
+}
+:root{
+    --page_heading:Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+    --status_text:Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}

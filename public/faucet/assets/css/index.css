@@ -1,429 +1,127 @@
-@import url("c_f.css");
+@import url('color_font.css');
 
 *{
-    margin: 00px;
     padding: 00px;
+    margin: 00px;
     box-sizing: border-box;
-    font-family: var(--tx_font);
 }
-::-webkit-scrollbar{
-    display: none;
-}
-li{
-    list-style: none;
-}
-a{
-  text-decoration: none;
-  color: black;
-}
-a:hover{
-  color: var(--links_blue);
-}
-.header{
-    z-index: +99;
-    padding: 10px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    position: sticky;
-    top: 00px;
-    background-color: var(--white);
+body{
+    background-color: var(--body_bg);
 }
 .root{
-    background-color: var(--white_blue);
-    padding-bottom: 1rem;
+    padding: 2rem;
 }
-.header_web_log_img{
-    width: 35px;
-    height: 35px;
-}
-.header_right_connect_div .wallet_connect_btn{
-    padding: 5px 10px;
-    border-radius: 5px;
-    min-width: 120px;
-    font-size: 16px;
-    color: var(--white);
-    background-color: var(--side_bar_line_hover);
-}
-.top_banner_div{
-    background-color: var(--body_bg);
-    background-image: url('../image/icon/top_bg.svg');
-    background-repeat: no-repeat;
-    height: 300px;
-    background-size: cover;
-
-    display: flex;
-    justify-content: space-between;
-}
-.top_banner_first_div{
-    width: 90%;
-    margin: 3rem auto;
-}
-
-
-/* ============================ */
-.faucet_details_div{
-   width: 90%;
-   margin: 00rem auto;
-   border-radius: 10px;
-   box-shadow: var(--box_shadow_5px);
-   background-color: white;
-   height: 170px;
-   margin-top: -3rem;
-   padding: 10px 10px;
-}
-.faucet_details_div *{
-  font-family: var(--monospace);
-}
-.transctions_details{
-   width: 90%;
-   margin: 00rem auto;
-   margin-top: 2rem;
-   border-radius: 10px;
-   box-shadow: var(--box_shadow_5px);
-   background-color: white;
-}
-.tx_details_heading{
-    padding: 10px 20px;
-}
-.tx_table_parent_div{
-    overflow: auto;
-    margin-top: 0.5rem;
-    max-height: 600px;
-    overflow: auto; 
-}
-  
-#tx_table {
+.input_box{
     width: 100%;
-    border-collapse: collapse; 
+    padding: 2.5rem;
+    border-radius: 20px;
+    background-color: var(--faucet_input_bg);
 }
-#tx_table th,
-#tx_table td {
-    padding: 15px 10px; 
-    text-align: left;  
+.input_box .input_div_btn_text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
-#tx_table tr{
-    border-bottom:1px solid var(--white_blue);
+.input_box .input_btn_logo_div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
-#tx_table tbody tr:hover{
-  background-color: var(--white_blue);
-}
-
-#tx_table th {
-  font-weight: bold; 
-
-    position: sticky !important;
-    top: 0;
-    z-index: 1;
-    background-color: var(--white);
-}
-#tx_table tr > td:first-child,
-#tx_table tr > th:first-child {
-    padding-left: 20px;
-}
-
-.tx_status_span{
-    background-color: var(--green_halka_bg);
-    font-size: 12px;
-    padding: 5px 10px;
-    color: var(--green);
-    border-radius: 5px;
-}
-.w_copy_icon{
-    width: 15px;
-    height: 15px;
-    margin-left: 5px;
-    cursor: pointer;
-}
-
-/* ============================= */
-.top_banner_div .input_box{
-  padding: 5px 5px 5px 5px;
-  border-radius: 5px;
-  background-color: var(--white);
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 5px;
-}
-.top_banner_div .input_box select{
-    outline: none;
-    padding: 5px;   
+.input_box .connect_btn{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
     border: none;
-    border-radius: 3px;
-    font-weight: bold;
-    background-color: var(--white);
-}
-
-.top_banner_div .input_box input{
-    outline: none;
-    padding: 5px 5px 5px 10px;
-    border: none;
-    font-weight: bold;
-    flex-grow:1;
-    font-size: 14px !important;
-    border-left: 1px solid var(--white_black_border_tx);
-}
-.top_banner_div .input_box button{
-    padding: 5px 15px;
-    font-weight: bold;
-    margin-left: auto;
-
-    background-image: var(--fau_button_bg);
-    border: var(--fau_send_btn_border);
-    border-radius: 5px;
+    background-color: var(--btn_bg);
     color: var(--white);
-    cursor: pointer;
-    direction: ltr;
-    display: block;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-align: center;
-    touch-action: manipulation;
-    white-space: nowrap;
 }
+.input_box .network_btn{
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    background-color: var(--btn_bg);
 
-.top_banner_div .input_box button:disabled {
-  cursor: default;
-  opacity: .3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.4rem;
 }
-
-.top_banner_div .input_box button:active {
-  background-image: var(--fau_clicked_bg);
-  border-color: var(--fau_clicked_border_c);
+.input_box .network_logo{
+    border-radius: 50px;
+    height: 19px;
+    width: 19px;
+}
+.input_box .faucet_heading{
+    font-size: 2.5rem;
+    color: var(--heading_color);
+    font-family: var(--page_heading);
+}
+.input_box .wallet_addrss_search_icon{
+    width: 20px;
+    height: 20px;
+}
+.input_box .input_tag_parent_box{
+    width: 100%;
+    margin-top: 2rem;
+}
+.input_box .input_tag_box{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: var(--body_bg);
+}
+.input_box .wallet_address_input{
   outline: none;
+  padding: 5px;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  flex-grow: 1;
+  background-color: transparent;
+}
+.input_box .wallet_addrss_search_icon{
+   opacity: 1;
+
 }
 
-.top_banner_div .network_logo{
-  width: 30px;
-  border-radius: 5px;
-}
-.top_banner_div .select_parent_div{
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
-.top_banner_div .search_heading{
-  margin-bottom: 1rem;
-  color: var(--white);
-}
-.top_banner_div  .sponser_ads_text{
-   margin-top: 0.5rem;
-   color: var(--white);
-}
-.top_banner_div .input_box *{
-  font-size: 16px;
-}
-.sponsored_links_a{
-    text-decoration: none;
-    color: var(--links_blue);
-    font-weight: bold;
-}
-.sponsered_parent_div{
+/* =========== */
+.faucet_details{
+    width: 100%;
+    margin-top: 2rem;
+
     display: flex;
-    align-items: center;
-    gap: 5px;
-}
-/* =============================== */
-.faucet_details_div{
-  display: flex;
-}
-.fauct_fast_div{
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    height: 100%;
-}
-.fauct_second_div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-.fauct_fast_div_1 , .fauct_fast_div_2{
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    padding: 10px;
-    padding-right: 20px;
-}
-.bottom_border{
-  padding: 00px 10px;
-}
-.bottom_border .border_div{
-  border: 1px solid var(--white_blue);
-}
-.fauct_fast_div_1 , .fauct_fast_div_2{
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    padding: 10px ;
-    border-right: 2px solid var(--white_blue);
-}
-.fauct_second_div_1,.fauct_second_div_2{
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    padding: 10px;
-    padding-left: 20px;
-    border-right: 2px solid var(--white_blue);
-}
-.token_status_img{
-  margin-right: 10px;
-}
-.status_heading{
-  color: var(--white_black_border);
-  font-size: 14px;
-}
-.status_value{
-  margin-top: 4px;
-}
-.fauct_third_div{
-  padding: 10px;
-}
-
-@media (max-width:800px) {
-  .col-md-6{
-    width: 50%;
-  }
-}
-@media (min-width:800px) {
-  .col-lg-4{
-    width: 33.3333333%;
-  }
-}
-/* ============================================ */
-.chart_parent_div{
-  height: 100%;
-  padding: 10px;
-  width: 100%;
-
-  display: flex;
-  justify-content: space-between;
-}
-.single_chart_div{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
-
-    height: 100%;
-    width: 5%;
-    position: relative;
+    gap: 1rem;
 }
-.single_chart_div .chart_div{
-   width: 100%;
-   margin-bottom: 5px;
-   transform-origin: bottom;
-   cursor: pointer;
-   height: 50px;
-   background-color: var(--links_blue);
+.faucet_details *{
+    font-family: var(--status_text);
+    color: var(--white);
 }
-.single_chart_div .d_name{
-   color: var(--white_black_border);
-   font-size: 12px;
+.faucet_details .status_heading{
+    color: var(--white_black);
 }
-.single_chart_div .uses_span{
-  font-size: 8px;
-  min-width: 50px;
-  letter-spacing: 0.1px;
-  position:absolute;
-  padding: 1px;
-  margin-top: -20px;
-  margin-left: -100%;
-  text-align: center;
-  color: black;
-  border-radius: 2px;
-  background-color: var(--links_blue_bg);
-
-  display: none;
-}
-
-.chart_div:hover .uses_span {
-    display: inline-block;  
-}
-
-/* ============================================= */
-
-footer{
-  height: 100px;
-  width: 100%;
+.faucet_details .faucet_col{
   padding: 10px;
-  padding-top: 30px;
-  border-top: 1px slid var(--white_blue);
-
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-}
-.fitst_footer_column .powerby{
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  gap: 10px;
-}
-.fitst_footer_column .powerby img{
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-}
-.foot_c_title{
-  margin-bottom: 10px;
-}
-.second_footer_column{
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  flex-direction: column;
-}
-
-.footer_last{
-  height: 30px;
-  width: 100%;
-  border-top: 1px solid var(--white_blue);
-  padding: 5px 20px;
-}
-.footer_last *{
-  font-family: var(--bridge_box_font);
-  font-size: 14px;
-}
-.footer_last_inner{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.footer_dona_add{
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-
-/* ======================================= */
-.sponsored_details_div{
-   width: 90%;
-   margin: 00rem auto;
-   height: 120px;
-   margin-top: 2rem;
-   overflow: hidden;
-
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   gap: 20px;
-}
-.spo_img_link{
-  width: 100%;
-  height: 100%;
-  display: inline-block;
   border-radius: 10px;
-  box-shadow: var(--box_shadow_5px);
-  overflow: hidden;
+  background-color: var(--status_box_bg);
+  width: 25%;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
 }
-.spo_img_tag{
-  width: 100%;
-  height: 100%;
+.faucet_details .faucet_col .icon{
+    width: 30px;
+    height: 30px;
 }
+.faucet_details .faucet_col .faucet_numb_box .faucet_numb_parent_div{
+  margin-top: 0.3rem;
+}  
+
+/* ===================== */
