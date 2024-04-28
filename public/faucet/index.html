@@ -9,6 +9,7 @@
   </head>
   <body>
     <div class="root">
+
       <div class="input_box">
         <div class="input_div_btn_text">
           <h2 class="faucet_heading">All Network Faucet</h2>
@@ -99,7 +100,126 @@
         </div>
       </div>
 
-      <div>
+      <div class="tx_details">
+         <div class="tx_heading"><h2><b>Latest transactions</b></h2></div>
+
+         <div class="tx_box_details">
+              <table class="tx_table">
+
+              <thead>
+                <tr>
+                  <th>Transactions Hash</th>
+                  <th>Status</th>
+                  <th>Wallet Address</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody class="tx_table_body" style="border-radius: 10px;">
+
+                <script>
+                  for (let i = 0; i < 20; i++) {
+                    document.write(`
+                    <tr>
+                      <td>
+                        <div class="td_div">
+                          <img class="tx_info_icon" src="assets/image/svg/info.svg" alt="">
+                          <div class="tx_de_p_d">
+                            <div><button class="tx_time">12 min ago</button></div>
+                            <div class="tx_hash_div">
+                              <img src="assets/image/svg/tx.svg" class="tx_tx_icon" alt="">
+                              <a href="" class="tx_link">dsfsdsdfsfsfsfsfssdaufs8adf7sf7sa9d889sad7f9s8f7fsdfsfsff3k42342k42k4j</a>
+                              <svg class="copy_icon" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                                <g>
+                                  <path d="M271 512H80c-44.113 0-80-35.887-80-80V161c0-44.113 35.887-80 80-80h191c44.113 0 80 35.887 80 80v271c0 44.113-35.887 80-80 80zM80 121c-22.055 0-40 17.945-40 40v271c0 22.055 17.945 40 40 40h191c22.055 0 40-17.945 40-40V161c0-22.055-17.945-40-40-40zm351 261V80c0-44.113-35.887-80-80-80H129c-11.047 0-20 8.953-20 20s8.953 20 20 20h222c22.055 0 40 17.945 40 40v302c0 11.047 8.953 20 20 20s20-8.953 20-20zm0 0" fill="#aaaaaa" opacity="1" data-original="#000000" class=""></path>
+                                </g>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div>
+                          <button class="status_btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                              <g>
+                                <path d="M256 0C114.836 0 0 114.836 0 256s114.836 256 256 256 256-114.836 256-256S397.164 0 256 0zm129.75 201.75L247.082 340.414c-4.16 4.16-9.621 6.254-15.082 6.254s-10.922-2.094-15.082-6.254l-69.332-69.332c-8.344-8.34-8.344-21.824 0-30.164 8.34-8.344 21.82-8.344 30.164 0l54.25 54.25 123.586-123.582c8.34-8.344 21.82-8.344 30.164 0 8.34 8.34 8.34 21.82 0 30.164zm0 0" fill="green" opacity="1" data-original="#000000" class=""></path>
+                              </g>
+                            </svg>
+                            <b>Success</b>
+                          </button>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="wallet_address_div">
+                          <a href="" class="tx_link">3242k34k23j4k23j4kl23j4kl24k24kj</a>
+                          <svg class="copy_icon" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                            <g>
+                              <path d="M271 512H80c-44.113 0-80-35.887-80-80V161c0-44.113 35.887-80 80-80h191c44.113 0 80 35.887 80 80v271c0 44.113-35.887 80-80 80zM80 121c-22.055 0-40 17.945-40 40v271c0 22.055 17.945 40 40 40h191c22.055 0 40-17.945 40-40V161c0-22.055-17.945-40-40-40zm351 261V80c0-44.113-35.887-80-80-80H129c-11.047 0-20 8.953-20 20s8.953 20 20 20h222c22.055 0 40 17.945 40 40v302c0 11.047 8.953 20 20 20s20-8.953 20-20zm0 0" fill="#aaaaaa" opacity="1" data-original="#000000" class=""></path>
+                            </g>
+                          </svg>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="faucet_amount_tx">
+                          <p>ZETA</p> <b>0.90</b>
+                        </div>
+                      </td>
+                    </tr>
+                    `);
+                  }
+                </script>
+
+                <!-- <tr>
+                  <td>
+                    <div class="td_div">
+                      <img class="tx_info_icon" src="assets/image/svg/info.svg" alt="">
+                      <div class="tx_de_p_d">
+                        <div><button class="tx_time">12 min ago</button></div>
+                        <div class="tx_hash_div">
+                          <img src="assets/image/svg/tx.svg" class="tx_tx_icon" alt="">
+                          <a href="" class="tx_link">dsfsdsdfsfsfsfsfssdaufs8adf7sf7sa9d889sad7f9s8f7fsdfsfsff3k42342k42k4j</a>
+                          <svg class="copy_icon" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                            <g>
+                              <path d="M271 512H80c-44.113 0-80-35.887-80-80V161c0-44.113 35.887-80 80-80h191c44.113 0 80 35.887 80 80v271c0 44.113-35.887 80-80 80zM80 121c-22.055 0-40 17.945-40 40v271c0 22.055 17.945 40 40 40h191c22.055 0 40-17.945 40-40V161c0-22.055-17.945-40-40-40zm351 261V80c0-44.113-35.887-80-80-80H129c-11.047 0-20 8.953-20 20s8.953 20 20 20h222c22.055 0 40 17.945 40 40v302c0 11.047 8.953 20 20 20s20-8.953 20-20zm0 0" fill="#aaaaaa" opacity="1" data-original="#000000" class=""></path>
+                            </g>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div>
+                      <button class="status_btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                          <g>
+                            <path d="M256 0C114.836 0 0 114.836 0 256s114.836 256 256 256 256-114.836 256-256S397.164 0 256 0zm129.75 201.75L247.082 340.414c-4.16 4.16-9.621 6.254-15.082 6.254s-10.922-2.094-15.082-6.254l-69.332-69.332c-8.344-8.34-8.344-21.824 0-30.164 8.34-8.344 21.82-8.344 30.164 0l54.25 54.25 123.586-123.582c8.34-8.344 21.82-8.344 30.164 0 8.34 8.34 8.34 21.82 0 30.164zm0 0" fill="green" opacity="1" data-original="#000000" class=""></path>
+                          </g>
+                        </svg>
+                        <b>Success</b>
+                      </button>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="wallet_address_div">
+                      <a href="" class="tx_link">3242k34k23j4k23j4kl23j4kl24k24kj</a>
+                      <svg class="copy_icon" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                        <g>
+                          <path d="M271 512H80c-44.113 0-80-35.887-80-80V161c0-44.113 35.887-80 80-80h191c44.113 0 80 35.887 80 80v271c0 44.113-35.887 80-80 80zM80 121c-22.055 0-40 17.945-40 40v271c0 22.055 17.945 40 40 40h191c22.055 0 40-17.945 40-40V161c0-22.055-17.945-40-40-40zm351 261V80c0-44.113-35.887-80-80-80H129c-11.047 0-20 8.953-20 20s8.953 20 20 20h222c22.055 0 40 17.945 40 40v302c0 11.047 8.953 20 20 20s20-8.953 20-20zm0 0" fill="#aaaaaa" opacity="1" data-original="#000000" class=""></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="faucet_amount_tx">
+                      <p>ZETA</p> <b>0.90</b>
+                    </div>
+                  </td>
+                </tr> -->
+
+              </tbody>
+
+              </table>
+         </div>
 
       </div>
 

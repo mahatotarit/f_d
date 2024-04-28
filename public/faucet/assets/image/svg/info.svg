@@ -1,28 +1,14 @@
-<svg
-    width="16"
-    height="16"
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
->
-    <path
-    d="M8.00004 14.6666C11.6819 14.6666 14.6667 11.6818 14.6667 7.99992C14.6667 4.31802 11.6819 1.33325 8.00004 1.33325C4.31814 1.33325 1.33337 4.31802 1.33337 7.99992C1.33337 11.6818 4.31814 14.6666 8.00004 14.6666Z"
-    stroke="#9DAAB2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    ></path>
-    <path
-    d="M8 10.6667V8"
-    stroke="#9DAAB2"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    ></path>
-    <path
-    d="M8 5.33374H8.00667"
-    stroke="#9DAAB2"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    ></path>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 682.667 682.667" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+<g>
+<defs>
+<clipPath id="a" clipPathUnits="userSpaceOnUse">
+<path d="M0 512h512V0H0Z" fill="#ffffff" opacity="1" data-original="#000000"></path>
+</clipPath>
+</defs>
+<g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 0 682.667)">
+<path d="M0 0h-272c-55.229 0-100-44.771-100-100v-272c0-55.229 44.771-100 100-100H0c55.229 0 100 44.771 100 100v272C100-44.771 55.229 0 0 0Z" style="stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(392 492)" fill="none" stroke="#ffffff" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class=""></path>
+<path d="M0 0v-153" style="stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(256 293)" fill="white" stroke="#ffffff" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class=""></path>
+<path d="M0 0c-13.807 0-25-11.193-25-25s11.193-25 25-25 25 11.193 25 25S13.807 0 0 0" style="fill-opacity:1;fill-rule:nonzero;stroke:none" transform="translate(256 392)" fill="#ffffff" data-original="#000000"></path>
+</g>
+</g>
 </svg>
