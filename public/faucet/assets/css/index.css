@@ -182,7 +182,7 @@ body{
      border-radius: 5px;
      padding: 3px 10px;
      font-size: 10px;
-     border: 1px solid var(--white_black);
+     border: 1px solid var(--faucet_input_bg);
 }
 .tx_table .tx_table_body .tx_link{
     display: inline-block;
