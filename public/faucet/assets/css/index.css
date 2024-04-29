@@ -241,6 +241,9 @@ body{
     padding: 10px;
     border-bottom: 1px solid var(--status_box_bg);
 }
+.tx_details .tx_table .tx_table_body tr{
+   padding: 10px 20px;
+}
 .tx_details .tx_box_details thead th{
     padding: 5px;
 }
