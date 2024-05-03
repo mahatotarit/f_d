@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Faucet</title>
     <link rel="stylesheet" href="assets/css/index.css" />
-    <link rel="stylesheet" href="../assets/css/common/header.css">
   </head>
   <body>
 
@@ -240,27 +239,3 @@
     </div>
   </body>
 </html>
-
-<script src="../assets/js/header.js"></script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', async function () {
-    try {
-      
-      const header_fetch = fetch('../assets/css/common/header.css');
-
-      const header_fetch_response = header_fetch;
-
-      if (!header_fetch_response.ok) throw new Error('Network response for header was not ok'); 
-
-      const headerData = await header_fetch_response.text();
-
-      conosle.log(headerData);
-
-      document.querySelector('#header').innerHTML = headerData;
- 
-      header();
-    } catch (error) {
-      console.error('Error loading header.html:', error);
-    }
-  });
