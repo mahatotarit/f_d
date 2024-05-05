@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bridge</title>
-    <link rel="stylesheet" href="assets/css/common/header.css" />
+    <link rel="stylesheet" href="../assets/css/common/header.css" />
     <link rel="stylesheet" href="assets/css/bridge.css">
     <link rel="stylesheet" href="assets/css/common/bridge_modal.css">
   </head>
@@ -173,14 +173,14 @@
   </body>
 </html>
 
-<script src="assets/js/header.js"></script>
+<script src="../assets/js/header.js"></script>
 <script src="assets/js/bridge.js"></script>
 
 <script>
   document.addEventListener('DOMContentLoaded', async function () {
     try {
       
-      const header_fetch = fetch('common/header.html');
+      const header_fetch = fetch('../common/header.html');
       const bridge_modal_fetch = fetch('common/bridge_modal.html');
 
       const [header_fetch_response,bridge_modal_fetch_response] = await Promise.all([header_fetch,bridge_modal_fetch]);

@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Faucet Distribution</title>
+
+    <link rel="stylesheet" href="../assets/css/common/header.css"/>
     <link rel="stylesheet" href="assets/css/index.css" />
+
   </head>
   <body>
+    <header id="header"></header>
+
 
     <div class="root">
 
@@ -281,3 +286,26 @@
 
   </body>
 </html>
+
+<script src="../assets/js/header.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', async function () {
+    try {
+      
+      const header_fetch = fetch('../common/header.html');
+
+      const [header_fetch_response] = await Promise.all([header_fetch]);
+
+      if (!header_fetch_response.ok) throw new Error('Network response for header was not ok'); 
+
+      const headerData = await header_fetch_response.text();
+
+      document.querySelector('#header').innerHTML = headerData;
+
+      header();
+    } catch (error) {
+      console.error('Error loading header.html:', error);
+    }
+  });
+</script>
