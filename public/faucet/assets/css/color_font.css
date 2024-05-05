@@ -7,9 +7,11 @@
     
     --white:white;
     --white_black:#aaaaaa;
+    --box_shadow:#000000;
     --link_color:#2883e6;
+    --white_halka:#646464eb;
 
-    --success_btn_bg:#a4ffb1;
+    --success_btn_bg:#bfffc9dc;
 }
 :root{
     --page_heading:Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;

@@ -1,5 +1,10 @@
 @import url('color_font.css');
 
+:root{
+    --box_margin_top:3rem;
+    --all_box_shadow:1px 5px 5px var(--box_shadow);
+}
+
 *{
     padding: 00px;
     margin: 00px;
@@ -22,6 +27,7 @@ body{
     padding: 2.5rem;
     border-radius: 20px;
     background-color: var(--faucet_input_bg);
+    box-shadow: var(--all_box_shadow);
 }
 .input_box .input_div_btn_text{
     display: flex;
@@ -69,7 +75,7 @@ body{
 }
 .input_box .input_tag_parent_box{
     width: 100%;
-    margin-top: 2rem;
+    margin-top: var(--box_margin_top);
 }
 .input_box .input_tag_box{
     display: flex;
@@ -97,7 +103,7 @@ body{
 /* =========== */
 .faucet_details{
     width: 100%;
-    margin-top: 2rem;
+    margin-top: var(--box_margin_top);
 
     display: flex;
     justify-content: space-between;
@@ -121,6 +127,7 @@ body{
   justify-content: start;
   align-items: center;
   gap: 0.5rem;
+  box-shadow: var(--all_box_shadow);
 }
 .faucet_details .faucet_col .icon{
     width: 30px;
@@ -132,7 +139,7 @@ body{
 
 /* ===================== */
 .tx_details{
-    margin-top: 2rem;
+    margin-top: var(--box_margin_top);
 }
 .tx_details .tx_heading *{
     font-family: var(--page_heading);
@@ -232,6 +239,7 @@ body{
    max-height: 760px;
    overflow: auto;
    border: 2px solid var(--status_box_bg);
+   box-shadow: var(--all_box_shadow);
 }
 .tx_details .tx_table tr{
     width: 100%;
@@ -255,4 +263,59 @@ body{
     position: sticky;
     top:00px;
     z-index: +1;
+}
+.root .sponsored_div{
+  height: 6rem;
+  margin-top: var(--box_margin_top);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.root .sponsored_div .sponsored_link{
+    width: 80%;
+    height: 100%;
+    border-radius: 1rem;
+    display: inline-block;
+    box-shadow: var(--all_box_shadow);
+}
+
+
+/* ====================================================== */
+footer{
+    padding: 5rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    background-color: var(--status_box_bg);
+}
+footer *{
+    font-family: var(--status_text);
+    color: var(--white);
+}
+footer .footer_main{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+footer .footer_main .footer_col{
+   display: flex;
+   flex-direction: column;
+}
+footer .footer_main .footer_col h2{
+   margin-bottom: 1rem;
+   text-align: start;
+}
+footer .footer_main .footer_col a{
+   margin-bottom: 1rem;
+   color: var(--white_black);
+}
+.footer_copy_div *{
+   color: var(--white_black);
+}
+.footer_copy_div{
+    border-top: 1px solid var(--white_halka);
+    margin-top: 3rem;
+    display: flex;
+    padding-top: 2rem;
+    align-items: center;
+    justify-content: space-between;
 }
