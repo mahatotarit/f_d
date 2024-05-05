@@ -111,7 +111,7 @@
     padding: 8px 20px;
     height: 64px;
     width: 100%;
-    background: #2d2e33;
+    background: var(--aside_bar_bg);
     border: 1px solid var(--white_black_border);
     border-radius: 32px;
     cursor: pointer;
@@ -121,7 +121,7 @@
     flex-direction: row;
     align-items: center;
     padding: 9px 20px 9px 32px;
-    background: #2d2e33;
+    background: var(--aside_bar_bg);
     border: 1px solid var(--white_black_border);
     border-radius: 32px;
     width: 100%;
@@ -320,7 +320,7 @@
     padding: 8px 20px;
     height: 64px;
     width: 100%;
-    background: #2d2e33;
+    background: var(--aside_bar_bg);
     border: 1px solid var(--white_black_border);
     border-radius: 32px;
     cursor: pointer;
