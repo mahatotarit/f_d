@@ -121,7 +121,7 @@ body{
   padding: 10px;
   border-radius: 10px;
   background-color: var(--status_box_bg);
-  width: 25%;
+  width: 50%;
 
   display: flex;
   justify-content: start;
@@ -159,6 +159,7 @@ body{
     width: 16px;
     height: 17px;
     margin-top: 2px;
+    cursor: pointer;
 }
 .tx_tx_icon{
     width: 25px;
@@ -226,6 +227,7 @@ body{
 .tx_table .tx_table_body .copy_icon{
   width: 15px;
   height: 15px;
+  cursor: pointer;
 }
 .tx_table .tx_table_body .faucet_amount_tx{
     display: flex;
@@ -261,7 +263,7 @@ body{
 .tx_details .tx_box_details thead{
     background-color: var(--status_box_bg);
     position: sticky;
-    top:00px;
+    top:-2px;
     z-index: +1;
 }
 .root .sponsored_div{
@@ -318,4 +320,39 @@ footer .footer_main .footer_col a{
     padding-top: 2rem;
     align-items: center;
     justify-content: space-between;
+}
+.faucet_col_parent{
+    width: 50%;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.donate_address{
+    overflow: hidden;
+    max-width: 300px;
+    text-overflow: ellipsis;
+}
+
+
+@media (max-width:768px) {
+    .faucet_details{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .faucet_col_parent{
+        width: 100%;
+    }
+    .input_btn_logo_div{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .input_btn_logo_div button{
+        width: 100%;
+    }
+    .row_td{
+        margin: 0px 1rem;
+    }
 }

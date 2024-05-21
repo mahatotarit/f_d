@@ -49,7 +49,8 @@
       </div>
 
       <div class="faucet_details">
-        <div class="faucet_col">
+        <div class="faucet_col_parent">
+          <div class="faucet_col">
           <img class="icon" src="assets/image/svg/block.svg" alt="" />
           <div class="faucet_numb_box">
             <div>
@@ -59,48 +60,40 @@
               <b>468,356</b>
             </div>
           </div>
-        </div>
-        <div class="faucet_col">
-          <img class="icon" src="assets/image/svg/tx.svg" alt="" />
-          <div class="faucet_numb_box">
-            <div>
-              <small class="status_heading">Total Blocks</small>
-            </div>
-            <div class="faucet_numb_parent_div">
-              <b>468,356</b>
+          </div>
+          <div class="faucet_col">
+            <img class="icon" src="assets/image/svg/tx.svg" alt="" />
+            <div class="faucet_numb_box">
+              <div>
+                <small class="status_heading">Total Blocks</small>
+              </div>
+              <div class="faucet_numb_parent_div">
+                <b>468,356</b>
+              </div>
             </div>
           </div>
         </div>
-        <div class="faucet_col">
-          <img class="icon" src="assets/image/svg/wallet.svg" alt="" />
-          <div class="faucet_numb_box">
-            <div>
-              <small class="status_heading">Total Blocks</small>
-            </div>
-            <div class="faucet_numb_parent_div">
-              <b>468,356</b>
-            </div>
-          </div>
-        </div>
-        <div class="faucet_col">
-          <img class="icon" src="assets/image/svg/wallet.svg" alt="" />
-          <div class="faucet_numb_box">
-            <div>
-              <small class="status_heading">Total Blocks</small>
-            </div>
-            <div class="faucet_numb_parent_div">
-              <b>468,356</b>
+        <div class="faucet_col_parent">
+          <div class="faucet_col">
+            <img class="icon" src="assets/image/svg/wallet.svg" alt="" />
+            <div class="faucet_numb_box">
+              <div>
+                <small class="status_heading">Total Blocks</small>
+              </div>
+              <div class="faucet_numb_parent_div">
+                <b>468,356</b>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="faucet_col">
-          <img class="icon" src="assets/image/svg/wallet.svg" alt="" />
-          <div class="faucet_numb_box">
-            <div>
-              <small class="status_heading">Total Blocks</small>
-            </div>
-            <div class="faucet_numb_parent_div">
-              <b>468,356</b>
+          <div class="faucet_col">
+            <img class="icon" src="assets/image/svg/wallet.svg" alt="" />
+            <div class="faucet_numb_box">
+              <div>
+                <small class="status_heading">Total Blocks</small>
+              </div>
+              <div class="faucet_numb_parent_div">
+                <b>468,356</b>
+              </div>
             </div>
           </div>
         </div>
@@ -132,7 +125,7 @@
                   for (let i = 0; i < 20; i++) {
                     document.write(`
                     <tr>
-                      <td>
+                      <td class="row_td">
                         <div class="td_div">
                           <img class="tx_info_icon" src="assets/image/svg/info.svg" alt="">
                           <div class="tx_de_p_d">
@@ -149,7 +142,7 @@
                           </div>
                         </div>
                       </td>
-                      <td>
+                      <td class="row_td">
                         <div>
                           <button class="status_btn">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
@@ -161,7 +154,7 @@
                           </button>
                         </div>
                       </td>
-                      <td>
+                      <td class="row_td">
                         <div class="wallet_address_div">
 
                           <svg style="margin-right:5px;" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" clip-rule="evenodd" viewBox="0 0 25 24" width="20" height="20">
@@ -181,7 +174,7 @@
                           </svg>
                         </div>
                       </td>
-                      <td>
+                      <td class="row_td">
                         <div class="faucet_amount_tx">
                           <p>ZETA</p> <b>0.90</b>
                         </div>
@@ -280,7 +273,7 @@
       </div>
       <div class="footer_copy_div">
         <div><p>© 2024 0xtarit. All rights reserved.</p></div>
-        <div>Donate: 0x68d4c669c82129b833441108F102E61c798251E8</div>
+        <div class="donate_address">Donate: <a href="">0x68d4c669c82129b833441108F102E61c798251E8</a></div>
       </div>
     </footer>
 
