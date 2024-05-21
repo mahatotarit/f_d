@@ -295,7 +295,7 @@ footer *{
 }
 footer .footer_main{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
 }
 footer .footer_main .footer_col{
@@ -333,7 +333,15 @@ footer .footer_main .footer_col a{
     max-width: 300px;
     text-overflow: ellipsis;
 }
-
+.network_change_name{
+    color:var(--white);
+}
+.footer_col_parent{
+    display:flex;
+    justify-content:space-around;
+    gap:1rem;
+    width:50%;
+}
 
 @media (max-width:768px) {
     .faucet_details{
@@ -354,5 +362,16 @@ footer .footer_main .footer_col a{
     }
     .row_td{
         margin: 0px 1rem;
+    }
+    .footer_main{
+        width:100%;
+        flex-direction:column;
+        justify-content:space-between;
+    }
+    .footer_col_parent{
+        width:100%;
+    }
+    footer{
+        padding:2rem 1rem 2rem 1rem;
     }
 }
