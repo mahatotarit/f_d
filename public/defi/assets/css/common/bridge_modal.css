@@ -86,7 +86,6 @@
     padding: 14px 12px 14px 16px;
     cursor: pointer;
     width: 100%;
-    background: #2d2e33;
 }
 .token_parent_div:hover{
     background-color:var(--side_bar_line_hover);
@@ -161,6 +160,6 @@
     padding:10px 5px;
     border-radius:10px;
     border:none;
-    background-color:var(--side_bar_line_hover);
+    background-color:var(--body_bg);
     outline:none;
 }
